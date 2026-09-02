@@ -1,0 +1,176 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider  = "postgresql"
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // Hashed using bcrypt
+  createdAt DateTime @default(now())
+}
+
+model Blog {
+  id               String   @id @default(cuid())
+  title            String
+  slug             String   @unique
+  featuredImage    String?
+  content          String   // Rich Text (HTML/Markdown)
+  category         String
+  tags             String[]
+  metaTitle        String?
+  metaDescription  String?
+  canonicalUrl     String?
+  ogImage          String?
+  faqSection       Json?    // Array of { question, answer }
+  author           String?
+  status           String   @default("DRAFT") // DRAFT, PUBLISHED
+  publishedAt      DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  deletedAt        DateTime?
+  readTime         String?
+}
+
+model Template {
+  id               String   @id @default(cuid())
+  name             String
+  slug             String   @unique
+  university       String?
+  degree           String?
+  category         String
+  shortDescription String?
+  thumbnailImage   String?
+  previewImages    String[]
+  badge            String?  // Official, New, Trending, etc.
+  isFeatured       Boolean  @default(false)
+  displayOrder     Int      @default(0)
+  status           String   @default("DRAFT") // DRAFT, PUBLISHED
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  deletedAt        DateTime?
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  url       String
+  publicId  String   @unique // Cloudinary Public ID
+  filename  String
+  format    String   @default("unknown")
+  size      Int      @default(0)
+  width     Int?
+  height    Int?
+  altText   String?
+  createdAt DateTime @default(now())
+}
+
+model Settings {
+  id                String   @id @default(cuid())
+  contactEmail      String?
+  phoneNumber       String?
+  socialLinks       Json?    // { linkedin, twitter, etc }
+  footerLinks       Json?
+  androidAppLink    String?
+  googleAnalytics   String?
+  searchConsole     String?
+  adsenseCode       String?
+  gtmId             String?
+  updatedAt         DateTime @updatedAt
+}
+
+// ==========================================
+// Phase 4 Extensions
+// ==========================================
+
+model InboxMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Subscriber {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  isSubscribed Boolean  @default(true)
+  createdAt    DateTime @default(now())
+}
+
+// ==========================================
+// Future Ready Tables (Not explicitly used yet)
+// ==========================================
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String?
+  name      String?
+  provider  String   @default("email")
+  isPremium Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  resumes   SavedResume[]
+  coverLetters CoverLetter[]
+}
+
+model SavedResume {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  data      Json     // The builder JSON state
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  versions  ResumeVersion[]
+}
+
+model ResumeVersion {
+  id            String   @id @default(cuid())
+  resumeId      String
+  resume        SavedResume @relation(fields: [resumeId], references: [id], onDelete: Cascade)
+  data          Json
+  versionNumber Int      @default(1)
+  createdAt     DateTime @default(now())
+}
+
+model CoverLetter {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PremiumTemplate {
+  id        String   @id @default(cuid())
+  name      String
+  price     Float    @default(0.0)
+  createdAt DateTime @default(now())
+}
+
+// ==========================================
+// Digital Portfolio Extensions
+// ==========================================
+
+model DigitalPortfolio {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  editToken    String
+  data         Json
+  isPublished  Boolean  @default(false)
+  isSearchable Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

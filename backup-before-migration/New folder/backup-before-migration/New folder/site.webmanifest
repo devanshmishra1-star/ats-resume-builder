@@ -1,0 +1,15 @@
+{
+  "name": "ATS Resume Builder",
+  "short_name": "ATS Resume",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f1ed",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    }
+  ]
+}
