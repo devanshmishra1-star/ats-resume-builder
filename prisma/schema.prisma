@@ -1,68 +1,65 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client"
-  output   = "../lib/generated/prisma"
+  provider     = "prisma-client"
+  output       = "../lib/generated/prisma"
   moduleFormat = "cjs"
 }
 
 datasource db {
-  provider  = "postgresql"
+  provider = "postgresql"
 }
 
 model Admin {
   id        String   @id @default(cuid())
   email     String   @unique
-  password  String   // Hashed using bcrypt
+  password  String
   createdAt DateTime @default(now())
 }
 
 model Blog {
-  id               String   @id @default(cuid())
-  title            String
-  slug             String   @unique
-  featuredImage    String?
-  content          String   // Rich Text (HTML/Markdown)
-  category         String
-  tags             String[]
-  metaTitle        String?
-  metaDescription  String?
-  canonicalUrl     String?
-  ogImage          String?
-  faqSection       Json?    // Array of { question, answer }
-  author           String?
-  status           String   @default("DRAFT") // DRAFT, PUBLISHED
-  publishedAt      DateTime?
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
-  deletedAt        DateTime?
-  readTime         String?
+  id              String    @id @default(cuid())
+  title           String
+  slug            String    @unique
+  featuredImage   String?
+  content         String
+  category        String
+  tags            String[]
+  metaTitle       String?
+  metaDescription String?
+  canonicalUrl    String?
+  ogImage         String?
+  faqSection      Json?
+  author          String?
+  status          String    @default("DRAFT")
+  publishedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  deletedAt       DateTime?
+  readTime        String?
 }
 
 model Template {
-  id               String   @id @default(cuid())
+  id               String    @id @default(cuid())
   name             String
-  slug             String   @unique
+  slug             String    @unique
   university       String?
   degree           String?
   category         String
   shortDescription String?
   thumbnailImage   String?
   previewImages    String[]
-  badge            String?  // Official, New, Trending, etc.
-  isFeatured       Boolean  @default(false)
-  displayOrder     Int      @default(0)
-  status           String   @default("DRAFT") // DRAFT, PUBLISHED
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  badge            String?
+  isFeatured       Boolean   @default(false)
+  displayOrder     Int       @default(0)
+  status           String    @default("DRAFT")
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
   deletedAt        DateTime?
 }
 
 model Media {
   id        String   @id @default(cuid())
   url       String
-  publicId  String   @unique // Cloudinary Public ID
+  publicId  String   @unique
   filename  String
   format    String   @default("unknown")
   size      Int      @default(0)
@@ -73,22 +70,18 @@ model Media {
 }
 
 model Settings {
-  id                String   @id @default(cuid())
-  contactEmail      String?
-  phoneNumber       String?
-  socialLinks       Json?    // { linkedin, twitter, etc }
-  footerLinks       Json?
-  androidAppLink    String?
-  googleAnalytics   String?
-  searchConsole     String?
-  adsenseCode       String?
-  gtmId             String?
-  updatedAt         DateTime @updatedAt
+  id              String   @id @default(cuid())
+  contactEmail    String?
+  phoneNumber     String?
+  socialLinks     Json?
+  footerLinks     Json?
+  androidAppLink  String?
+  googleAnalytics String?
+  searchConsole   String?
+  adsenseCode     String?
+  gtmId           String?
+  updatedAt       DateTime @updatedAt
 }
-
-// ==========================================
-// Phase 4 Extensions
-// ==========================================
 
 model InboxMessage {
   id        String   @id @default(cuid())
@@ -107,50 +100,46 @@ model Subscriber {
   createdAt    DateTime @default(now())
 }
 
-// ==========================================
-// Future Ready Tables (Not explicitly used yet)
-// ==========================================
-
 model User {
-  id        String   @id @default(cuid())
-  email     String   @unique
-  password  String?
-  name      String?
-  provider  String   @default("email")
-  isPremium Boolean  @default(false)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  resumes   SavedResume[]
+  id           String        @id @default(cuid())
+  email        String        @unique
+  password     String?
+  name         String?
+  provider     String        @default("email")
+  isPremium    Boolean       @default(false)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
   coverLetters CoverLetter[]
+  resumes      SavedResume[]
 }
 
 model SavedResume {
-  id        String   @id @default(cuid())
+  id        String          @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   title     String
-  data      Json     // The builder JSON state
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  data      Json
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
   versions  ResumeVersion[]
+  user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model ResumeVersion {
-  id            String   @id @default(cuid())
+  id            String      @id @default(cuid())
   resumeId      String
-  resume        SavedResume @relation(fields: [resumeId], references: [id], onDelete: Cascade)
   data          Json
-  versionNumber Int      @default(1)
-  createdAt     DateTime @default(now())
+  versionNumber Int         @default(1)
+  createdAt     DateTime    @default(now())
+  resume        SavedResume @relation(fields: [resumeId], references: [id], onDelete: Cascade)
 }
 
 model CoverLetter {
   id        String   @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   content   String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model PremiumTemplate {
@@ -159,10 +148,6 @@ model PremiumTemplate {
   price     Float    @default(0.0)
   createdAt DateTime @default(now())
 }
-
-// ==========================================
-// Digital Portfolio Extensions
-// ==========================================
 
 model DigitalPortfolio {
   id           String   @id @default(cuid())

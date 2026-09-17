@@ -8,3 +8,5 @@ node_modules
 .netlify
 
 .next
+
+scratch/

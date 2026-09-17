@@ -1,0 +1,6040 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIT Bombay CV Builder</title>
+    <meta
+      name="description"
+      content="Create a clean, ATS-friendly A4 resume online with live preview, professional sections, certificates, projects, skills, education, experience, and PDF export."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://atsresumebuilder.co.in/" />
+    <meta
+      property="og:title"
+      content="ATS Resume Builder - Free ATS Friendly Resume Maker with PDF Export"
+    />
+    <meta
+      property="og:description"
+      content="Create a clean, ATS-friendly A4 resume online with live preview, professional sections, certificates, projects, skills, education, experience, and PDF export."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://atsresumebuilder.co.in/" />
+    <meta
+      property="og:image"
+      content="https://atsresumebuilder.co.in/assets/ats-resume-guide-cover.png"
+    />
+    <meta property="og:site_name" content="ATS Resume Builder" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ATS Resume Builder - Free ATS Friendly Resume Maker with PDF Export"
+    />
+    <meta
+      name="twitter:description"
+      content="Create a clean, ATS-friendly A4 resume online with live preview, professional sections, certificates, projects, skills, education, experience, and PDF export."
+    />
+    <meta
+      name="twitter:image"
+      content="https://atsresumebuilder.co.in/assets/ats-resume-guide-cover.png"
+    />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "ATS Resume Builder",
+            "url": "https://atsresumebuilder.co.in/",
+            "logo": "https://atsresumebuilder.co.in/favicon.svg"
+          },
+          {
+            "@type": "WebSite",
+            "name": "ATS Resume Builder",
+            "url": "https://atsresumebuilder.co.in/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://atsresumebuilder.co.in/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "ATS Resume Builder - Free ATS Friendly Resume Maker with PDF Export",
+            "url": "https://atsresumebuilder.co.in/",
+            "description": "Create a clean, ATS-friendly A4 resume online with live preview, professional sections, certificates, projects, skills, education, experience, and PDF export.",
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    </script>
+
+    <meta
+      name="keywords"
+      content="ATS resume builder, resume maker, CV builder, free resume generator, ATS friendly resume, PDF resume, fresher resume, professional resume builder"
+    />
+    <meta name="author" content="ATS Resume Builder" />
+
+    <link
+      rel="preload"
+      href="site.css?v=headerfix-20260722"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link rel="stylesheet" href="site.css?v=headerfix-20260722"
+    /></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --app-bg: #f3f1ed;
+        --panel-bg: #ffffff;
+        --ink: #111111;
+        --muted: #626262;
+        --rule: #000000;
+        --field: #f7f7f7;
+        --field-border: #d8d8d8;
+        --accent: #111111;
+        --page-w: 210mm;
+        --page-h: 297mm;
+        --page-pad-x: 12.6mm;
+        --page-pad-top: 7.2mm;
+        --page-pad-bottom: 7mm;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        color: var(--ink);
+        background: var(--app-bg);
+        font-family: Arimo, Arial, Helvetica, sans-serif;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px clamp(18px, 4vw, 54px);
+        border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+        background: rgba(250, 248, 244, 0.82);
+        backdrop-filter: blur(22px);
+      }
+
+      .site-brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: #111111;
+        text-decoration: none;
+      }
+
+      .site-logo {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 13px;
+        color: #ffffff;
+        background: linear-gradient(
+          145deg,
+          #111111 0%,
+          #111111 58%,
+          #c8a96e 145%
+        );
+        box-shadow: 0 12px 28px rgba(17, 17, 17, 0.18);
+      }
+
+      .site-logo svg {
+        width: 23px;
+        height: 23px;
+      }
+
+      .site-name {
+        font-size: 15px;
+        line-height: 1.05;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .site-tag {
+        margin-top: 2px;
+        color: #626262;
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
+
+      .site-nav a {
+        padding: 9px 10px;
+        border-radius: 999px;
+        color: #555555;
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 800;
+        text-decoration: none;
+        transition:
+          background 160ms ease,
+          color 160ms ease,
+          transform 160ms ease;
+      }
+
+      .site-nav a:hover {
+        color: #111111;
+        background: rgba(17, 17, 17, 0.07);
+        transform: translateY(-1px);
+      }
+
+      .site-nav .nav-cta {
+        color: #ffffff;
+        background: linear-gradient(180deg, #111111, #111111);
+        box-shadow: 0 12px 24px rgba(17, 17, 17, 0.16);
+      }
+
+      .site-nav .nav-cta:hover {
+        color: #ffffff;
+        background: linear-gradient(180deg, #111111, #111111);
+      }
+
+      .nav-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgba(17, 17, 17, 0.12);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.92);
+        color: #111111;
+        transition:
+          transform 160ms ease,
+          background 160ms ease,
+          border-color 160ms ease;
+      }
+
+      .nav-state {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .nav-toggle:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 1);
+      }
+
+      .nav-toggle span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 999px;
+        background: currentColor;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(52px, 8vw, 92px) clamp(18px, 4vw, 54px)
+          clamp(34px, 6vw, 62px);
+        background:
+          radial-gradient(
+            circle at 82% 14%,
+            rgba(200, 169, 110, 0.24),
+            transparent 260px
+          ),
+          radial-gradient(
+            circle at 10% 8%,
+            rgba(255, 255, 255, 0.95),
+            transparent 330px
+          ),
+          linear-gradient(180deg, #f8f6f0 0%, #ffffff 100%);
+      }
+
+      .hero-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+        gap: clamp(24px, 5vw, 58px);
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        padding: 8px 11px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 999px;
+        color: #c8a96e;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 10px 28px rgba(17, 17, 17, 0.06);
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 720px;
+        margin: 0;
+        color: #111111;
+        font-size: clamp(42px, 7vw, 82px);
+        line-height: 0.94;
+        font-weight: 800;
+        letter-spacing: -0.055em;
+      }
+
+      .hero-copy {
+        max-width: 620px;
+        margin: 20px 0 0;
+        color: #626262;
+        font-size: clamp(15px, 1.7vw, 19px);
+        line-height: 1.55;
+        font-weight: 500;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      .hero-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 13px 17px;
+        border-radius: 13px;
+        border: 1px solid rgba(17, 17, 17, 0.12);
+        color: #111111;
+        background: rgba(255, 255, 255, 0.74);
+        box-shadow: 0 12px 26px rgba(17, 17, 17, 0.08);
+        font-size: 13px;
+        font-weight: 800;
+        text-decoration: none;
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .hero-button.primary {
+        color: #ffffff;
+        background: linear-gradient(180deg, #111111, #111111);
+        box-shadow: 0 16px 32px rgba(17, 17, 17, 0.2);
+      }
+
+      .hero-button.store {
+        color: #ffffff;
+        border-color: rgba(17, 17, 17, 0.92);
+        background:
+          linear-gradient(180deg, #111111, #111111),
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(200, 169, 110, 0.36),
+            transparent 80px
+          );
+      }
+
+      .hero-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 34px rgba(17, 17, 17, 0.14);
+      }
+
+      .hero-panel {
+        padding: 18px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.68);
+        box-shadow: 0 24px 70px rgba(17, 17, 17, 0.12);
+        backdrop-filter: blur(20px);
+      }
+
+      .hero-panel-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+      }
+
+      .hero-panel-title {
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .hero-panel-badge {
+        padding: 6px 9px;
+        border-radius: 999px;
+        color: #c8a96e;
+        background: rgba(200, 169, 110, 0.16);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .feature-grid {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        gap: 11px;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid rgba(17, 17, 17, 0.07);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .feature-icon {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        color: #ffffff;
+        background: #111111;
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .feature-title {
+        font-size: 13px;
+        line-height: 1.15;
+        font-weight: 800;
+      }
+
+      .feature-text {
+        margin-top: 3px;
+        color: #626262;
+        font-size: 11px;
+        line-height: 1.35;
+        font-weight: 500;
+      }
+
+      .content-section {
+        padding: clamp(42px, 7vw, 78px) clamp(18px, 4vw, 54px);
+      }
+
+      .content-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+      }
+
+      .section-head {
+        max-width: 690px;
+        margin-bottom: 24px;
+      }
+
+      .section-kicker {
+        margin-bottom: 9px;
+        color: #c8a96e;
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .section-heading {
+        margin: 0;
+        color: #111111;
+        font-size: clamp(28px, 4vw, 46px);
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: -0.045em;
+      }
+
+      .section-copy {
+        margin: 13px 0 0;
+        color: #626262;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+
+      .premium-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .premium-card {
+        min-height: 150px;
+        padding: 18px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 18px 46px rgba(17, 17, 17, 0.07);
+      }
+
+      .premium-card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #111111;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 800;
+      }
+
+      .premium-card span {
+        color: #626262;
+        font-size: 13px;
+        line-height: 1.55;
+        font-weight: 500;
+      }
+
+      .build-section {
+        scroll-margin-top: 78px;
+      }
+
+      .build-intro {
+        padding: 34px clamp(18px, 4vw, 54px) 18px;
+        background: #ffffff;
+      }
+
+      .build-intro .content-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: flex-end;
+      }
+
+      .build-intro .section-head {
+        margin-bottom: 0;
+      }
+
+      .ad-wide {
+        width: min(1120px, calc(100% - 36px));
+        min-height: 84px;
+        margin: 0 auto 18px;
+      }
+
+      .legal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .legal-card {
+        padding: 20px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 14px 36px rgba(17, 17, 17, 0.06);
+      }
+
+      .legal-card h3 {
+        margin: 0 0 9px;
+        color: #111111;
+        font-size: 17px;
+        line-height: 1.2;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .legal-card p {
+        margin: 0;
+        color: #626262;
+        font-size: 13px;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+
+      .contact-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 16px;
+        align-items: center;
+        padding: 22px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 22px;
+        background:
+          linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.86),
+            rgba(250, 248, 242, 0.72)
+          ),
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(200, 169, 110, 0.18),
+            transparent 180px
+          );
+        box-shadow: 0 18px 50px rgba(17, 17, 17, 0.08);
+      }
+
+      .contact-card a {
+        color: #111111;
+        font-weight: 800;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .contact-methods {
+        display: grid;
+        gap: 8px;
+        justify-items: end;
+        white-space: nowrap;
+      }
+
+      .contact-methods span,
+      .contact-methods a {
+        font-size: 13px;
+        line-height: 1.25;
+      }
+
+      .site-footer {
+        padding: 24px clamp(18px, 4vw, 54px);
+        border-top: 1px solid rgba(17, 17, 17, 0.08);
+        color: #626262;
+        background: rgba(255, 255, 255, 0.48);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .site-footer-inner {
+        width: min(1120px, 100%);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .templates-section {
+        background: linear-gradient(180deg, #f8f6f0, #f8f6f0);
+      }
+      .template-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .template-card {
+        overflow: hidden;
+        border: 1px solid rgba(17, 17, 17, 0.09);
+        border-radius: 22px;
+        background: #ffffff;
+        box-shadow: 0 18px 45px rgba(17, 17, 17, 0.08);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+      .template-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 52px rgba(17, 17, 17, 0.13);
+      }
+      .template-preview {
+        position: relative;
+        min-height: 210px;
+        padding: 22px;
+        background: linear-gradient(135deg, #f8f6f0, #f8f6f0);
+      }
+      .template-preview::before {
+        content: "";
+        display: block;
+        width: 78%;
+        height: 10px;
+        margin-bottom: 11px;
+        background: #111111;
+        box-shadow:
+          0 21px 0 #a9a9a9,
+          0 42px 0 #d0d0d0,
+          0 76px 0 #bcbcbc,
+          0 97px 0 #d3d3d3,
+          0 131px 0 #bcbcbc;
+        opacity: 0.88;
+      }
+      .template-preview::after {
+        content: "";
+        position: absolute;
+        right: 23px;
+        bottom: 25px;
+        width: 26%;
+        height: 76%;
+        border-left: 1px solid #c2c2c2;
+        background: linear-gradient(
+          #c8a96e 0 18%,
+          transparent 18% 29%,
+          #bcbcbc 29% 35%,
+          transparent 35% 47%,
+          #d0d0d0 47% 53%,
+          transparent 53%
+        );
+        opacity: 0.8;
+      }
+      .template-card.coming .template-preview {
+        filter: saturate(0.55);
+      }
+      .template-card.coming .template-preview {
+        min-height: 210px;
+        background: linear-gradient(135deg, #f8f6f0, #f8f6f0);
+      }
+      .template-card.coming .template-preview::before,
+      .template-card.coming .template-preview::after {
+        display: none;
+      }
+      .template-preview.accent {
+        background: linear-gradient(135deg, #f8f6f0 0%, #ffffff 100%);
+      }
+      .template-preview.dark {
+        background: linear-gradient(135deg, #2d2d2d 0%, #111111 100%);
+      }
+      .template-preview.blue {
+        background: linear-gradient(135deg, #e7f0ff 0%, #d0e0ff 100%);
+      }
+      .coming-template-label {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        min-height: 166px;
+        border: 1px dashed #bdb7ac;
+        border-radius: 12px;
+        color: #626262;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .template-action:disabled {
+        cursor: not-allowed;
+        opacity: 0.48;
+      }
+      .modern-template-image {
+        width: 100%;
+        height: 100%;
+        min-height: 210px;
+        object-fit: cover;
+        object-position: top;
+        border: 1px solid #dedede;
+        background: #ffffff;
+        box-shadow: 0 10px 25px rgba(17, 17, 17, 0.12);
+      }
+      body.builder-page-mode .site-header,
+      body.builder-page-mode > main,
+      body.builder-page-mode .global-footer,
+      body.builder-page-mode .cookie-banner,
+      body.builder-page-mode .modal-backdrop {
+        display: none !important;
+      }
+      .build-section {
+        display: none;
+      }
+      body.builder-page-mode .build-section {
+        display: block;
+      }
+      .template-body {
+        padding: 17px;
+      }
+      .template-title {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+        color: #111111;
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 8px;
+        border-radius: 999px;
+        color: #c8a96e;
+        background: #f8f6f0;
+        font-size: 10px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+      .badge.soon {
+        color: #ffffff;
+        background: #111111;
+      }
+      .template-actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .template-action {
+        flex: 1;
+        padding: 9px;
+        border: 1px solid #cfcfcf;
+        border-radius: 10px;
+        color: #555555;
+        background: #ffffff;
+        font-size: 12px;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+      }
+      .template-action.primary {
+        border-color: #111111;
+        color: #ffffff;
+        background: #111111;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+      }
+      .blog-card {
+        padding: 20px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 19px;
+        background: #ffffff;
+      }
+      .blog-meta {
+        color: #c8a96e;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .blog-card h3 {
+        margin: 11px 0 8px;
+        font-size: 18px;
+        letter-spacing: -0.03em;
+      }
+      .blog-card p {
+        margin: 0;
+        color: #626262;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+      .link-arrow {
+        display: inline-block;
+        margin-top: 16px;
+        color: #111111;
+        font-size: 12px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .faq-list {
+        display: grid;
+        gap: 10px;
+      }
+      .faq-list details {
+        padding: 15px 17px;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 14px;
+        background: #ffffff;
+      }
+      .faq-list summary {
+        color: #111111;
+        cursor: pointer;
+        font-weight: 800;
+      }
+      .faq-list p {
+        margin: 10px 0 0;
+        color: #626262;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 15px;
+      }
+      .footer-links a {
+        color: #555555;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        color: #111111;
+        text-decoration: underline;
+      }
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: none;
+        place-items: center;
+        padding: 20px;
+        background: rgba(17, 17, 17, 0.48);
+        backdrop-filter: blur(8px);
+      }
+      .modal-backdrop.open {
+        display: grid;
+      }
+      .modal {
+        width: min(440px, 100%);
+        padding: 28px;
+        border-radius: 24px;
+        background: #ffffff;
+        box-shadow: 0 25px 80px rgba(17, 17, 17, 0.25);
+        text-align: center;
+      }
+      .modal-icon {
+        display: grid;
+        place-items: center;
+        width: 54px;
+        height: 54px;
+        margin: 0 auto 15px;
+        border-radius: 17px;
+        color: #ffffff;
+        background: linear-gradient(145deg, #111111, #c8a96e);
+        font-size: 24px;
+      }
+      .modal h2 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: -0.04em;
+      }
+      .modal p {
+        margin: 10px 0 20px;
+        color: #626262;
+        line-height: 1.55;
+      }
+      .modal button {
+        padding: 10px 17px;
+        border: 0;
+        border-radius: 10px;
+        color: #ffffff;
+        background: #111111;
+        font-weight: 800;
+      }
+      .cookie-banner {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 90;
+        width: min(390px, calc(100% - 36px));
+        padding: 18px;
+        border: 1px solid rgba(17, 17, 17, 0.12);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.97);
+        box-shadow: 0 16px 52px rgba(17, 17, 17, 0.16);
+      }
+      .cookie-banner p {
+        margin: 7px 0 14px;
+        color: #626262;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .cookie-actions {
+        display: flex;
+        gap: 8px;
+      }
+      .cookie-actions button {
+        padding: 8px 11px;
+        border: 1px solid #c9c9c9;
+        border-radius: 9px;
+        background: #ffffff;
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .cookie-actions .accept {
+        color: #ffffff;
+        border-color: #111111;
+        background: #111111;
+      }
+
+      /* Version 2 premium experience — isolated from the resume builder styles below. */
+      html {
+        scroll-behavior: smooth;
+      }
+      .site-header {
+        transition:
+          padding 0.25s ease,
+          background 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .site-header.scrolled {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: rgba(250, 248, 244, 0.92);
+        box-shadow: 0 10px 30px rgba(17, 17, 17, 0.08);
+      }
+      .site-nav a {
+        position: relative;
+      }
+      .site-nav a:not(.nav-cta)::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 4px;
+        height: 2px;
+        border-radius: 3px;
+        background: #c8a96e;
+        transform: scaleX(0);
+        transition: transform 0.2s ease;
+      }
+      .site-nav a.active::after,
+      .site-nav a:hover::after {
+        transform: scaleX(1);
+      }
+      .hero-premium {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: clamp(70px, 10vw, 130px) clamp(18px, 4vw, 54px)
+          clamp(65px, 9vw, 110px);
+        background: #ffffff;
+      }
+      .hero-premium::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        inset: -30%;
+        background:
+          radial-gradient(
+            circle at 19% 36%,
+            rgba(200, 169, 110, 0.34),
+            transparent 23%
+          ),
+          radial-gradient(
+            circle at 75% 29%,
+            rgba(120, 143, 159, 0.22),
+            transparent 25%
+          ),
+          radial-gradient(
+            circle at 63% 82%,
+            rgba(255, 255, 255, 0.98),
+            transparent 27%
+          );
+        filter: blur(8px);
+        animation: meshShift 15s ease-in-out infinite alternate;
+      }
+      .hero-premium::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: 0.42;
+        background-image:
+          linear-gradient(rgba(17, 17, 17, 0.045) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(17, 17, 17, 0.045) 1px, transparent 1px);
+        background-size: 52px 52px;
+        mask-image: linear-gradient(to bottom, black, transparent 90%);
+      }
+      .hero-premium .hero-inner {
+        grid-template-columns: minmax(0, 1.02fr) minmax(380px, 0.98fr);
+      }
+      .hero-premium h1 {
+        max-width: 700px;
+        font-size: clamp(45px, 6.3vw, 82px);
+        line-height: 0.96;
+        letter-spacing: -0.065em;
+      }
+      .hero-premium .hero-copy {
+        max-width: 580px;
+        font-size: clamp(16px, 1.5vw, 19px);
+      }
+      .hero-visual {
+        position: relative;
+        min-height: 490px;
+        display: grid;
+        place-items: center;
+      }
+      .resume-float {
+        position: relative;
+        z-index: 2;
+        width: min(330px, 78%);
+        aspect-ratio: 0.73;
+        padding: 25px 22px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow:
+          0 36px 80px rgba(17, 17, 17, 0.23),
+          0 3px 10px rgba(17, 17, 17, 0.11);
+        transform: rotate(3deg);
+        animation: resumeFloat 6s ease-in-out infinite;
+      }
+      .mini-name {
+        margin-bottom: 5px;
+        font-size: 19px;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+      .mini-contact {
+        color: #626262;
+        font-size: 6px;
+      }
+      .mini-rule {
+        height: 1px;
+        margin: 13px 0 10px;
+        background: #111111;
+      }
+      .mini-heading {
+        margin: 10px 0 5px;
+        font-size: 7px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .mini-copy {
+        color: #626262;
+        font-size: 6px;
+        line-height: 1.55;
+      }
+      .mini-job {
+        font-size: 7px;
+        font-weight: 700;
+      }
+      .mini-date {
+        float: right;
+        color: #626262;
+        font-size: 6px;
+      }
+      .float-chip {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 11px 13px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.68);
+        box-shadow: 0 18px 40px rgba(17, 17, 17, 0.13);
+        backdrop-filter: blur(16px);
+        font-size: 11px;
+        font-weight: 800;
+        animation: chipFloat 5s ease-in-out infinite;
+      }
+      .float-chip strong {
+        font-size: 17px;
+        letter-spacing: -0.04em;
+      }
+      .score-chip {
+        left: 0;
+        top: 68px;
+      }
+      .pdf-chip {
+        right: 0;
+        bottom: 75px;
+        animation-delay: -2s;
+      }
+      .section-chip {
+        left: 14px;
+        bottom: 32px;
+        animation-delay: -1s;
+      }
+      .chip-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #c8a96e;
+        box-shadow: 0 0 0 5px rgba(91, 154, 105, 0.15);
+      }
+      @keyframes meshShift {
+        to {
+          transform: translate3d(4%, 2%, 0) scale(1.06);
+        }
+      }
+      @keyframes resumeFloat {
+        50% {
+          transform: rotate(1deg) translateY(-13px);
+        }
+      }
+      @keyframes chipFloat {
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      .content-section {
+        position: relative;
+      }
+      .content-section:nth-of-type(even) {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.45),
+          rgba(248, 246, 240, 0.78)
+        );
+      }
+      .premium-card,
+      .legal-card,
+      .blog-card,
+      .template-card {
+        position: relative;
+        overflow: hidden;
+      }
+      .premium-card::before,
+      .legal-card::before,
+      .blog-card::before,
+      .template-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: inherit;
+        background: linear-gradient(
+          125deg,
+          rgba(255, 255, 255, 0.6),
+          transparent 32%
+        );
+      }
+      .template-preview {
+        display: grid;
+        place-items: center;
+        padding: 18px;
+      }
+      .template-preview::before,
+      .template-preview::after {
+        display: none;
+      }
+      .template-resume {
+        width: 76%;
+        min-height: 180px;
+        padding: 15px;
+        border: 1px solid #dedede;
+        background: #ffffff;
+        box-shadow: 0 10px 25px rgba(17, 17, 17, 0.12);
+        color: #555555;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        transform: rotate(-1deg);
+        transition: transform 0.25s ease;
+      }
+      .template-card:hover .template-resume {
+        transform: rotate(0) scale(1.04);
+      }
+      .template-resume .mini-name {
+        font-size: 10px;
+      }
+      .template-resume .mini-contact,
+      .template-resume .mini-copy,
+      .template-resume .mini-date {
+        font-size: 4px;
+      }
+      .template-resume .mini-heading {
+        margin: 7px 0 3px;
+        font-size: 5px;
+      }
+      .template-resume .mini-job {
+        font-size: 5px;
+      }
+      .template-resume .mini-rule {
+        margin: 6px 0;
+      }
+      .template-resume.accent {
+        border-top: 7px solid #c8a96e;
+      }
+      .template-resume.dark {
+        color: #ffffff;
+        background: #111111;
+        border-color: #111111;
+      }
+      .template-resume.dark .mini-copy,
+      .template-resume.dark .mini-contact,
+      .template-resume.dark .mini-date {
+        color: #d2d2d2;
+      }
+      .template-resume.blue {
+        border-left: 7px solid #c8a96e;
+      }
+      .blog-card {
+        min-height: 260px;
+        padding: 0;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 22px 45px rgba(17, 17, 17, 0.1);
+      }
+      .blog-thumb {
+        height: 104px;
+        overflow: hidden;
+        background: #f8f6f0;
+      }
+      .blog-thumb img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .blog-content {
+        padding: 17px 19px 19px;
+      }
+      .blog-byline {
+        margin-top: 14px;
+        color: #626262;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .blog-thumb.featured-guide {
+        background-size: cover;
+        background-position: center;
+      }
+      .footer-hero {
+        padding: 30px;
+        border-radius: 20px;
+        color: #eee;
+        background: linear-gradient(135deg, #111111, #111111);
+      }
+      .footer-hero h3 {
+        margin: 0;
+        font-size: 22px;
+        letter-spacing: -0.04em;
+      }
+      .newsletter {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .newsletter input {
+        min-width: 0;
+        flex: 1;
+        padding: 10px 12px;
+        border: 1px solid #535353;
+        border-radius: 10px;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .newsletter button {
+        padding: 10px 13px;
+        border: 0;
+        border-radius: 10px;
+        background: #c8a96e;
+        color: #111111;
+        font-weight: 800;
+      }
+      @media (max-width: 980px) {
+        .hero-premium .hero-inner {
+          grid-template-columns: 1fr;
+        }
+        .hero-visual {
+          min-height: 380px;
+          max-width: 550px;
+          width: 100%;
+          margin: auto;
+        }
+      }
+      @media (max-width: 560px) {
+        .site-nav {
+          gap: 1px;
+        }
+        .site-nav a {
+          padding: 7px 7px;
+          font-size: 11px;
+        }
+        .hero-premium h1 {
+          font-size: 45px;
+        }
+        .hero-visual {
+          min-height: 330px;
+        }
+        .resume-float {
+          width: 210px;
+          padding: 18px;
+        }
+        .score-chip {
+          left: 2px;
+        }
+        .pdf-chip {
+          right: 1px;
+        }
+        .section-chip {
+          display: none;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Readability reset: larger layout and navigation, without touching builder styles. */
+      .content-inner,
+      .hero-inner,
+      .site-footer-inner {
+        width: min(1280px, 100%);
+      }
+      .site-header {
+        min-height: 72px;
+        padding: 14px clamp(22px, 4vw, 64px);
+      }
+      .site-logo {
+        width: 42px;
+        height: 42px;
+      }
+      .site-name {
+        font-size: 17px;
+      }
+      .site-tag {
+        font-size: 10px;
+      }
+      .site-nav {
+        gap: 8px;
+      }
+      .site-nav a {
+        padding: 11px 13px;
+        font-size: 13px;
+      }
+      .site-nav .nav-cta {
+        padding: 11px 16px;
+      }
+      .hero-premium {
+        min-height: 590px;
+        padding-top: clamp(85px, 11vw, 145px);
+        padding-bottom: clamp(85px, 11vw, 135px);
+      }
+      .hero-premium .hero-inner {
+        display: block;
+        max-width: 1280px;
+      }
+      .hero-premium h1 {
+        max-width: 900px;
+        font-size: clamp(54px, 6.5vw, 92px);
+        line-height: 0.94;
+      }
+      .hero-premium .hero-copy {
+        max-width: 690px;
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 1.65;
+      }
+      .hero-premium .hero-actions {
+        margin-top: 30px;
+      }
+      .hero-button {
+        min-height: 48px;
+        padding: 14px 19px;
+        font-size: 14px;
+      }
+      .hero-visual {
+        display: none;
+      }
+      .site-footer {
+        padding: 72px clamp(22px, 4vw, 64px) 28px;
+        color: #d5d5d5;
+        background: #111111;
+        border: 0;
+      }
+      .site-footer-inner {
+        display: grid;
+        grid-template-columns: 1.35fr 0.75fr 0.75fr 0.75fr;
+        gap: 32px;
+        align-items: start;
+      }
+      .site-footer-inner > span:first-child {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+      }
+      .site-footer-inner > span:nth-child(2) {
+        grid-column: 1;
+        color: #a9a9a9;
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+      .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+        grid-column: 2 / 5;
+        gap: 12px 20px;
+      }
+      .footer-links::before {
+        content: "Explore";
+        grid-column: 1 / -1;
+        margin-bottom: 2px;
+        color: #c8a96e;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+      .footer-links a {
+        color: #d7d7d7;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .footer-links a:hover {
+        color: #ffffff;
+      }
+      .footer-hero {
+        grid-column: 1 / 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        padding: 26px 28px;
+        margin-top: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: linear-gradient(120deg, #111111, #111111);
+      }
+      .footer-hero h3 {
+        font-size: 25px;
+      }
+      .newsletter {
+        width: min(440px, 100%);
+        margin: 0;
+      }
+      .newsletter input {
+        min-height: 45px;
+        font-size: 13px;
+      }
+      .newsletter button {
+        min-height: 45px;
+      }
+      @media (max-width: 980px) {
+        .site-header {
+          align-items: center;
+        }
+        .site-nav a {
+          font-size: 12px;
+          padding: 9px 9px;
+        }
+        .site-footer-inner {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-links {
+          grid-column: 1 / 3;
+        }
+        .footer-hero {
+          grid-column: 1 / 3;
+          display: block;
+        }
+        .newsletter {
+          margin-top: 16px;
+        }
+      }
+      @media (max-width: 560px) {
+        .site-header {
+          padding: 12px 16px;
+        }
+        .site-nav {
+          gap: 2px;
+        }
+        .site-nav a {
+          padding: 8px 6px;
+          font-size: 11px;
+        }
+        .site-name {
+          font-size: 14px;
+        }
+        .site-tag {
+          display: none;
+        }
+        .hero-premium {
+          min-height: 510px;
+        }
+        .hero-premium h1 {
+          font-size: 49px;
+        }
+        .hero-premium .hero-copy {
+          font-size: 16px;
+        }
+        .site-footer-inner {
+          grid-template-columns: 1fr;
+        }
+        .footer-links,
+        .footer-hero {
+          grid-column: 1;
+        }
+        .footer-links {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* Wide, left-aligned desktop canvas: avoids the zoomed-out centred appearance. */
+      @media (min-width: 900px) {
+        body {
+          zoom: normal;
+        }
+        .content-inner,
+        .hero-inner,
+        .site-footer-inner {
+          width: 100%;
+          max-width: none;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .content-section {
+          padding-left: clamp(38px, 6vw, 96px);
+          padding-right: clamp(38px, 6vw, 96px);
+        }
+        .hero-premium {
+          padding-left: clamp(38px, 6vw, 96px);
+          padding-right: clamp(38px, 6vw, 96px);
+        }
+        .site-header {
+          padding-left: clamp(28px, 4vw, 64px);
+          padding-right: clamp(28px, 4vw, 64px);
+          min-height: 82px;
+        }
+        .site-logo {
+          width: 48px;
+          height: 48px;
+        }
+        .site-name {
+          font-size: 19px;
+        }
+        .site-tag {
+          font-size: 11px;
+        }
+        .site-nav {
+          gap: 11px;
+        }
+        .site-nav a {
+          padding: 13px 15px;
+          font-size: 15px;
+        }
+        .site-nav .nav-cta {
+          padding: 13px 19px;
+        }
+        .section-kicker {
+          font-size: 12px;
+        }
+        .section-heading {
+          font-size: clamp(40px, 4.2vw, 62px);
+        }
+        .section-copy {
+          max-width: 850px;
+          font-size: 17px;
+        }
+        .premium-card {
+          min-height: 175px;
+          padding: 23px;
+        }
+        .premium-card strong {
+          font-size: 18px;
+        }
+        .premium-card span {
+          font-size: 15px;
+        }
+        .template-title {
+          font-size: 18px;
+        }
+        .template-action {
+          padding: 11px;
+          font-size: 13px;
+        }
+      }
+
+      /* Restored hero proportions — no global scale/zoom or component redesign. */
+      .hero-premium {
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      .hero-premium .hero-inner {
+        width: min(1500px, 100%);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(520px, 600px);
+        gap: clamp(54px, 7vw, 120px);
+        align-items: center;
+      }
+      .hero-premium h1 {
+        max-width: 780px;
+        font-size: clamp(80px, 6.5vw, 100px);
+        line-height: 0.94;
+      }
+      .hero-premium .hero-copy {
+        max-width: 650px;
+        margin-top: 28px;
+        font-size: 19px;
+        line-height: 1.65;
+      }
+      .hero-premium .hero-actions {
+        margin-top: 34px;
+        gap: 13px;
+      }
+      .hero-premium .hero-button {
+        min-height: 54px;
+        padding: 16px 22px;
+        font-size: 15px;
+        box-shadow: 0 14px 28px rgba(17, 17, 17, 0.14);
+      }
+      .hero-workflow {
+        width: 100%;
+        padding: 34px;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        border-radius: 30px;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.92),
+          rgba(249, 247, 241, 0.74)
+        );
+        box-shadow:
+          0 34px 78px rgba(17, 17, 17, 0.17),
+          inset 0 1px rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(18px);
+      }
+      .workflow-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      .workflow-status {
+        padding: 8px 11px;
+        border-radius: 999px;
+        color: #c8a96e;
+        background: #f8f6f0;
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .workflow-step {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        gap: 17px;
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+      }
+      .workflow-number {
+        display: grid;
+        place-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 14px;
+        color: #ffffff;
+        background: #111111;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      .workflow-step strong {
+        display: block;
+        margin-top: 2px;
+        font-size: 18px;
+        letter-spacing: -0.025em;
+      }
+      .workflow-step p {
+        margin: 7px 0 0;
+        color: #626262;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+      .workflow-bottom {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-top: 23px;
+        color: #555555;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      @media (max-width: 1100px) {
+        .hero-premium {
+          min-height: auto;
+        }
+        .hero-premium .hero-inner {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+        .hero-workflow {
+          max-width: 650px;
+        }
+        .hero-premium h1 {
+          font-size: clamp(60px, 9vw, 82px);
+        }
+      }
+      @media (max-width: 560px) {
+        .hero-premium {
+          padding-top: 68px;
+          padding-bottom: 68px;
+        }
+        .hero-premium .hero-inner {
+          gap: 34px;
+        }
+        .hero-premium h1 {
+          font-size: clamp(43px, 12vw, 50px);
+        }
+        .hero-premium .hero-copy {
+          font-size: 16px;
+        }
+        .hero-premium .hero-button {
+          width: 100%;
+          justify-content: center;
+        }
+        .hero-workflow {
+          padding: 23px;
+          border-radius: 22px;
+        }
+        .workflow-step {
+          padding: 18px 0;
+        }
+        .workflow-step strong {
+          font-size: 16px;
+        }
+      }
+
+      /* Desktop readability parity: restores the larger original visual proportions. */
+      @media (min-width: 1100px) {
+        .site-header {
+          min-height: 108px;
+          padding-left: 54px;
+          padding-right: 54px;
+        }
+        .site-logo {
+          width: 58px;
+          height: 58px;
+        }
+        .site-logo svg {
+          width: 30px;
+          height: 30px;
+        }
+        .site-name {
+          font-size: 22px;
+        }
+        .site-tag {
+          margin-top: 4px;
+          font-size: 12px;
+        }
+        .site-nav {
+          gap: 15px;
+        }
+        .site-nav a {
+          padding: 16px 17px;
+          font-size: 18px;
+        }
+        .site-nav .nav-cta {
+          padding: 16px 23px;
+        }
+        .hero-premium {
+          min-height: 100vh;
+          padding: 110px 140px;
+        }
+        .hero-premium .hero-inner {
+          width: min(1800px, 100%);
+          grid-template-columns: minmax(0, 1fr) minmax(820px, 960px);
+          gap: clamp(100px, 9vw, 190px);
+        }
+        .hero-premium h1 {
+          max-width: 1080px;
+          font-size: clamp(128px, 8.3vw, 164px);
+          letter-spacing: -0.07em;
+        }
+        .hero-premium .hero-copy {
+          max-width: 890px;
+          margin-top: 38px;
+          font-size: 25px;
+          line-height: 1.62;
+        }
+        .hero-premium .hero-actions {
+          margin-top: 43px;
+          gap: 18px;
+        }
+        .hero-premium .hero-button {
+          min-height: 70px;
+          padding: 20px 29px;
+          font-size: 19px;
+          border-radius: 14px;
+        }
+        .hero-workflow {
+          padding: 51px;
+          border-radius: 38px;
+          box-shadow:
+            0 42px 90px rgba(17, 17, 17, 0.2),
+            inset 0 1px rgba(255, 255, 255, 0.9);
+        }
+        .workflow-top {
+          padding-bottom: 30px;
+          font-size: 22px;
+        }
+        .workflow-status {
+          padding: 10px 15px;
+          font-size: 13px;
+        }
+        .workflow-step {
+          grid-template-columns: 68px 1fr;
+          gap: 22px;
+          padding: 31px 0;
+        }
+        .workflow-number {
+          width: 58px;
+          height: 58px;
+          border-radius: 17px;
+          font-size: 17px;
+        }
+        .workflow-step strong {
+          font-size: 23px;
+        }
+        .workflow-step p {
+          margin-top: 9px;
+          font-size: 17px;
+        }
+        .workflow-bottom {
+          padding-top: 28px;
+          font-size: 16px;
+        }
+      }
+
+      /* Final hero alignment: a centred, balanced two-column desktop composition. */
+      @media (min-width: 1100px) {
+        .site-header {
+          min-height: 64px;
+          padding: 12px clamp(24px, 4vw, 54px);
+        }
+        .site-logo {
+          width: 38px;
+          height: 38px;
+        }
+        .site-logo svg {
+          width: 23px;
+          height: 23px;
+        }
+        .site-name {
+          font-size: 15px;
+        }
+        .site-tag {
+          font-size: 10px;
+        }
+        .site-nav {
+          gap: 4px;
+        }
+        .site-nav a {
+          padding: 9px 10px;
+          font-size: 12px;
+        }
+        .site-nav .nav-cta {
+          padding: 9px 13px;
+        }
+        .hero-premium {
+          min-height: calc(100vh - 64px);
+          padding: 70px 24px;
+          display: flex;
+          align-items: center;
+        }
+        .hero-premium .hero-inner {
+          width: min(1400px, 100%);
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(520px, 560px);
+          gap: clamp(32px, 4vw, 64px);
+          align-items: center;
+        }
+        .hero-premium h1 {
+          max-width: 650px;
+          font-size: clamp(80px, 6vw, 96px);
+          line-height: 0.94;
+          letter-spacing: -0.065em;
+        }
+        .hero-premium .hero-copy {
+          max-width: 600px;
+          margin-top: 22px;
+          font-size: 17px;
+          line-height: 1.55;
+        }
+        .hero-premium .hero-actions {
+          margin-top: 27px;
+          gap: 10px;
+        }
+        .hero-premium .hero-button {
+          min-height: 46px;
+          padding: 13px 17px;
+          border-radius: 11px;
+          font-size: 13px;
+        }
+        .hero-workflow {
+          width: 100%;
+          padding: 28px;
+          border-radius: 22px;
+          box-shadow:
+            0 28px 65px rgba(17, 17, 17, 0.16),
+            inset 0 1px rgba(255, 255, 255, 0.9);
+        }
+        .workflow-top {
+          padding-bottom: 19px;
+          font-size: 15px;
+        }
+        .workflow-status {
+          padding: 7px 10px;
+          font-size: 10px;
+        }
+        .workflow-step {
+          grid-template-columns: 45px 1fr;
+          gap: 14px;
+          padding: 17px 0;
+        }
+        .workflow-number {
+          width: 38px;
+          height: 38px;
+          border-radius: 11px;
+          font-size: 12px;
+        }
+        .workflow-step strong {
+          font-size: 15px;
+        }
+        .workflow-step p {
+          margin-top: 5px;
+          font-size: 12px;
+          line-height: 1.45;
+        }
+        .workflow-bottom {
+          padding-top: 17px;
+          font-size: 11px;
+        }
+      }
+
+      .builder {
+        display: grid;
+        grid-template-columns: minmax(360px, 480px) 1fr;
+        min-height: 100vh;
+      }
+
+      .editor {
+        background:
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(255, 255, 255, 0.9)
+          ),
+          radial-gradient(
+            circle at 22px 18px,
+            rgba(200, 169, 110, 0.16),
+            transparent 170px
+          );
+        border-right: 1px solid rgba(17, 17, 17, 0.12);
+        height: 100vh;
+        overflow: auto;
+        padding: 20px 18px 28px;
+      }
+
+      .editor-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 18px;
+        padding: 15px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 18px 45px rgba(17, 17, 17, 0.08);
+        backdrop-filter: blur(18px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        border-radius: 13px;
+        color: #ffffff;
+        background: linear-gradient(
+          145deg,
+          #111111 0%,
+          #111111 54%,
+          #c8a96e 140%
+        );
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.22),
+          0 14px 28px rgba(17, 17, 17, 0.18);
+      }
+
+      .brand-mark svg {
+        width: 25px;
+        height: 25px;
+      }
+
+      .editor-title {
+        font-size: 19px;
+        line-height: 1.1;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+      }
+
+      .editor-subtitle {
+        margin-top: 5px;
+        color: #626262;
+        font-size: 11.5px;
+        line-height: 1.35;
+        font-weight: 500;
+      }
+
+      .print-btn {
+        border: 1px solid rgba(17, 17, 17, 0.96);
+        background: linear-gradient(180deg, #111111, #111111);
+        color: #ffffff;
+        border-radius: 11px;
+        padding: 10px 13px;
+        font-size: 12px;
+        font-weight: 800;
+        white-space: nowrap;
+        box-shadow: 0 12px 24px rgba(17, 17, 17, 0.18);
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease,
+          background 160ms ease;
+      }
+
+      .print-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 30px rgba(17, 17, 17, 0.22);
+      }
+
+      .print-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 8px 18px rgba(17, 17, 17, 0.16);
+      }
+
+      .export-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+      }
+
+      .app-card {
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: center;
+        margin-bottom: 14px;
+        padding: 14px;
+        border: 1px solid rgba(17, 17, 17, 0.08);
+        border-radius: 16px;
+        background:
+          linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.9),
+            rgba(250, 248, 242, 0.78)
+          ),
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(200, 169, 110, 0.22),
+            transparent 120px
+          );
+        box-shadow: 0 14px 36px rgba(17, 17, 17, 0.07);
+      }
+
+      .app-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: inherit;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.55),
+          transparent 45%
+        );
+      }
+
+      .app-copy {
+        position: relative;
+        min-width: 0;
+      }
+
+      .app-kicker {
+        margin-bottom: 4px;
+        color: #c8a96e;
+        font-size: 10px;
+        line-height: 1.1;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .app-title {
+        color: #111111;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .app-text {
+        margin-top: 4px;
+        color: #626262;
+        font-size: 11px;
+        line-height: 1.4;
+        font-weight: 500;
+      }
+
+      .store-btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 38px;
+        padding: 8px 11px;
+        border: 1px solid rgba(17, 17, 17, 0.9);
+        border-radius: 12px;
+        color: #ffffff;
+        background: linear-gradient(180deg, #111111, #111111);
+        box-shadow: 0 12px 24px rgba(17, 17, 17, 0.16);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .store-icon {
+        width: 17px;
+        height: 17px;
+        display: grid;
+        place-items: center;
+        color: #c8a96e;
+      }
+
+      .store-lines {
+        display: grid;
+        line-height: 1.05;
+      }
+
+      .store-small {
+        font-size: 8px;
+        font-weight: 700;
+        opacity: 0.78;
+      }
+
+      .store-main {
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .ad-slot {
+        display: grid;
+        place-items: center;
+        min-height: 72px;
+        margin-bottom: 14px;
+        padding: 12px;
+        border: 1px dashed rgba(17, 17, 17, 0.14);
+        border-radius: 14px;
+        color: #626262;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.58),
+            rgba(255, 255, 255, 0.34)
+          ),
+          repeating-linear-gradient(
+            135deg,
+            rgba(17, 17, 17, 0.025) 0 8px,
+            transparent 8px 16px
+          );
+        font-size: 10px;
+        line-height: 1.3;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .tab {
+        border: 1px solid rgba(17, 17, 17, 0.12);
+        background: rgba(255, 255, 255, 0.78);
+        color: #555555;
+        border-radius: 9px;
+        padding: 8px 10px;
+        font-size: 11px;
+        font-weight: 800;
+        box-shadow: 0 6px 16px rgba(17, 17, 17, 0.04);
+        transition:
+          transform 150ms ease,
+          background 150ms ease,
+          border-color 150ms ease;
+      }
+
+      .tab:hover {
+        transform: translateY(-1px);
+        border-color: rgba(17, 17, 17, 0.24);
+      }
+
+      .tab.active {
+        background: linear-gradient(180deg, #111111, #111111);
+        border-color: #111111;
+        color: #ffffff;
+        box-shadow: 0 10px 22px rgba(17, 17, 17, 0.16);
+      }
+
+      .form-section {
+        display: none;
+      }
+
+      .form-section.active {
+        display: block;
+      }
+
+      .section-caption {
+        margin: 14px 0 10px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .field.full {
+        grid-column: 1 / -1;
+      }
+
+      label {
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #555555;
+        text-transform: uppercase;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--field-border);
+        background: var(--field);
+        border-radius: 5px;
+        padding: 8px 9px;
+        color: #111111;
+        font-size: 12px;
+        line-height: 1.35;
+      }
+
+      textarea {
+        min-height: 88px;
+        resize: vertical;
+      }
+
+      .entry-card {
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #ffffff;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .entry-label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .remove-btn,
+      .add-btn {
+        border: 1px solid #111111;
+        border-radius: 5px;
+        background: #ffffff;
+        color: #111111;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 6px 8px;
+      }
+
+      .add-btn {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .form-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 18px;
+        padding-top: 14px;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .nav-btn {
+        border: 1px solid #111111;
+        border-radius: 5px;
+        background: #111111;
+        color: #ffffff;
+        padding: 9px 14px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .nav-btn.secondary {
+        background: #ffffff;
+        color: #111111;
+      }
+
+      .preview-shell {
+        height: 100vh;
+        overflow: auto;
+        padding: 18px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .resume-page {
+        width: var(--page-w);
+        min-width: var(--page-w);
+        height: var(--page-h);
+        min-height: var(--page-h);
+        overflow: hidden;
+        background: #ffffff;
+        padding: var(--page-pad-top) var(--page-pad-x) var(--page-pad-bottom);
+        color: #111111;
+        font-family: Arimo, Arial, Helvetica, sans-serif;
+        font-size: 9.35pt;
+        line-height: 1.31;
+        letter-spacing: 0;
+        box-shadow: 0 8px 24px rgba(17, 17, 17, 0.18);
+      }
+
+      .resume-header {
+        text-align: center;
+        margin-bottom: 4.7mm;
+      }
+
+      .resume-page.template-professional .resume-header,
+      .resume-page.template-corporate .resume-header,
+      .resume-page.template-student .resume-header,
+      .resume-page.template-creative .resume-header,
+      .resume-page.template-executive .resume-header {
+        text-align: left;
+      }
+
+      .resume-page.template-professional .resume-name {
+        font-size: 12pt;
+      }
+
+      .resume-page.template-corporate .resume-page {
+        border-left: 4px solid #111111;
+        padding-left: calc(var(--page-pad-x) - 4mm);
+      }
+
+      .resume-page.template-executive .resume-header {
+        border-bottom: 1px solid #111111;
+        padding-bottom: 2mm;
+        margin-bottom: 6mm;
+      }
+
+      .resume-page.template-creative .resume-header {
+        color: #0f4d91;
+      }
+
+      .resume-page.template-student .resume-header {
+        margin-bottom: 3.5mm;
+      }
+
+      .resume-page.template-student .resume-name {
+        font-size: 10.3pt;
+      }
+
+      .resume-name {
+        font-size: 10.9pt;
+        line-height: 1.08;
+        font-weight: 700;
+        margin: 0 0 1.35mm;
+        letter-spacing: 0;
+      }
+
+      .resume-location {
+        font-size: 7.55pt;
+        line-height: 1.12;
+        font-weight: 400;
+        margin-bottom: 2.05mm;
+      }
+
+      .resume-contact {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 2.55mm;
+        flex-wrap: nowrap;
+        font-size: 7.25pt;
+        line-height: 1.05;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .resume-contact.professional,
+      .resume-contact.executive,
+      .resume-contact.corporate,
+      .resume-contact.creative,
+      .resume-contact.student {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2.35mm;
+      }
+
+      .resume-header.professional .resume-contact,
+      .resume-header.executive .resume-contact,
+      .resume-header.corporate .resume-contact,
+      .resume-header.creative .resume-contact,
+      .resume-header.student .resume-contact {
+        justify-content: flex-start;
+      }
+
+      .resume-title-block {
+        display: flex;
+        flex-direction: column;
+        gap: 1mm;
+      }
+
+      .resume-contact span {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.8mm;
+      }
+
+      .resume-contact .label {
+        font-weight: 700;
+      }
+
+      .contact-icon {
+        display: inline-flex;
+        width: 2.15mm;
+        min-width: 2.15mm;
+        height: 2.15mm;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: #111111;
+        border-radius: 50%;
+        font-size: 4.8pt;
+        line-height: 1;
+        font-weight: 700;
+        text-decoration: none;
+        transform: translateY(-0.25mm);
+      }
+
+      .contact-icon.text {
+        border-radius: 0;
+        width: auto;
+        min-width: 0;
+        height: auto;
+        color: #111111;
+        background: transparent;
+        font-size: 7.05pt;
+        transform: none;
+      }
+
+      .resume-section {
+        margin-top: 2.65mm;
+      }
+
+      .resume-section:first-of-type {
+        margin-top: 0;
+      }
+
+      .section-title {
+        border-bottom: 0.72pt solid var(--rule);
+        font-size: 10pt;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: none;
+        letter-spacing: 0;
+        padding-bottom: 0.82mm;
+        margin-bottom: 1.45mm;
+      }
+
+      .entry {
+        margin-bottom: 1.82mm;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 43mm;
+        column-gap: 5mm;
+        align-items: baseline;
+      }
+
+      .entry-main {
+        min-width: 0;
+        font-size: 9.25pt;
+        line-height: 1.24;
+      }
+
+      .entry-title {
+        font-weight: 700;
+      }
+
+      .entry-pipe {
+        padding: 0 0.55mm;
+        font-weight: 400;
+      }
+
+      .entry-tech,
+      .entry-link {
+        font-style: italic;
+        font-weight: 400;
+      }
+
+      .entry-date {
+        text-align: right;
+        font-size: 8.75pt;
+        line-height: 1.24;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .entry-subrow {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 43mm;
+        column-gap: 5mm;
+        align-items: baseline;
+        margin-top: 0.25mm;
+      }
+
+      .entry-sub {
+        font-size: 8.7pt;
+        line-height: 1.22;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .entry-right-sub {
+        text-align: right;
+        font-size: 8.45pt;
+        line-height: 1.22;
+        font-style: italic;
+      }
+
+      .bullets {
+        margin: 1.05mm 0 0 5.35mm;
+        padding: 0;
+        list-style-position: outside;
+      }
+
+      .bullets li {
+        padding-left: 1.15mm;
+        margin: 0 0 0.82mm;
+        font-size: 8.95pt;
+        line-height: 1.32;
+      }
+
+      .skills-list {
+        display: grid;
+        row-gap: 0.82mm;
+        margin-top: 0.2mm;
+      }
+
+      .skill-line {
+        font-size: 8.9pt;
+        line-height: 1.28;
+      }
+
+      .skill-line strong {
+        font-weight: 700;
+      }
+
+      .certificate .entry-sub {
+        font-weight: 600;
+      }
+
+      .certificate a,
+      .project a,
+      .resume-contact a {
+        color: #111111;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+      }
+
+      .empty-note {
+        font-size: 8.35pt;
+        color: #555555;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body {
+          width: 210mm;
+          height: 297mm;
+          background: #ffffff;
+        }
+
+        .site-header,
+        .hero,
+        .content-section,
+        .build-intro,
+        .site-footer,
+        .global-footer,
+        .ad-wide,
+        .mobile-builder-actions,
+        .mobile-nav-overlay,
+        .nav-toggle,
+        .cookie-banner,
+        .modal-backdrop {
+          display: none !important;
+        }
+
+        .editor {
+          display: none !important;
+        }
+
+        .builder {
+          display: block;
+          min-height: 0;
+        }
+
+        .preview-shell {
+          display: block;
+          height: auto;
+          overflow: visible;
+          padding: 0;
+        }
+
+        .resume-page {
+          box-shadow: none;
+          margin: 0;
+          width: 210mm;
+          height: 297mm;
+          min-width: 210mm;
+          min-height: 297mm;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .mobile-preview-toolbar {
+          display: none !important;
+        }
+
+        .mobile-preview-stage {
+          position: static !important;
+          width: auto !important;
+          height: auto !important;
+          overflow: visible !important;
+        }
+
+        .mobile-preview-stage .resume-page {
+          position: static !important;
+          transform: none !important;
+          transform-origin: initial !important;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .site-header {
+          align-items: flex-start;
+          flex-direction: column;
+          position: relative;
+        }
+
+        .nav-toggle {
+          display: inline-flex;
+          margin-left: auto;
+        }
+
+        .site-nav {
+          justify-content: flex-start;
+          position: absolute;
+          top: calc(100% + 10px);
+          right: 16px;
+          left: 16px;
+          width: auto;
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          padding: 0;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+          border: 1px solid rgba(17, 17, 17, 0.08);
+          border-radius: 18px;
+          background: rgba(255, 255, 255, 0.96);
+          box-shadow: 0 24px 56px rgba(17, 17, 17, 0.12);
+          transform: translateY(-10px);
+          transition:
+            max-height 280ms ease,
+            opacity 200ms ease,
+            transform 280ms ease,
+            padding 280ms ease;
+          z-index: 60;
+        }
+
+        .site-nav.open {
+          max-height: 520px;
+          opacity: 1;
+          padding: 10px 0 12px;
+          transform: translateY(0);
+        }
+
+        .site-nav a {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 0;
+        }
+
+        .site-nav .nav-cta {
+          width: 100%;
+          margin-top: 6px;
+          text-align: center;
+        }
+
+        .site-nav a:not(.nav-cta)::after {
+          left: 0;
+          right: 0;
+          bottom: 10px;
+        }
+
+        .hero-inner,
+        .premium-grid,
+        .legal-grid,
+        .contact-card,
+        .template-grid,
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .build-intro .content-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .builder {
+          grid-template-columns: 1fr;
+        }
+
+        .editor {
+          height: auto;
+          border-right: 0;
+          border-bottom: 1px solid #d2d2d2;
+        }
+
+        .preview-shell {
+          height: auto;
+          overflow: auto;
+        }
+
+        .resume-page {
+          width: 100%;
+          min-width: 0;
+          max-width: 880px;
+          min-height: auto;
+          box-shadow: none;
+        }
+
+        .preview-shell {
+          padding: 18px 16px 28px;
+        }
+
+        .editor {
+          padding: 22px 16px 26px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .editor-top,
+        .app-card {
+          grid-template-columns: 1fr;
+        }
+
+        .editor-top {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .export-actions {
+          justify-content: stretch;
+        }
+
+        .print-btn,
+        .store-btn {
+          justify-content: center;
+          width: 100%;
+        }
+      }
+
+      /* Mobile and tablet refinement.  These rules intentionally begin below the
+   desktop breakpoint so the established desktop composition is unchanged. */
+      .mobile-builder-actions {
+        display: none;
+      }
+      @media (max-width: 1024px) {
+        html {
+          overflow-x: hidden;
+        }
+        body {
+          overflow-x: hidden;
+        }
+        body.nav-open {
+          overflow: hidden;
+        }
+        /* Keep native swipe scrolling, but remove the browser scrollbar visible in the builder iframe. */
+        html:has(body.builder-page-mode),
+        body.builder-page-mode {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        html:has(body.builder-page-mode)::-webkit-scrollbar,
+        body.builder-page-mode::-webkit-scrollbar {
+          display: none;
+          width: 0;
+          height: 0;
+        }
+
+        .site-header {
+          min-height: 64px;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px 16px;
+        }
+        .nav-toggle {
+          display: inline-flex;
+          position: relative;
+          z-index: 72;
+          margin-left: auto;
+          touch-action: manipulation;
+        }
+        .nav-toggle span {
+          transition:
+            transform 320ms ease,
+            opacity 180ms ease;
+        }
+        .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0.35);
+        }
+        .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+        #mobileNavToggle:checked + .nav-toggle span:nth-child(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        #mobileNavToggle:checked + .nav-toggle span:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0.35);
+        }
+        #mobileNavToggle:checked + .nav-toggle span:nth-child(3) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+        .mobile-nav-overlay {
+          position: fixed;
+          inset: 0;
+          z-index: 60;
+          opacity: 0;
+          visibility: hidden;
+          background: rgba(17, 17, 17, 0.52);
+          backdrop-filter: blur(3px);
+          transition:
+            opacity 320ms ease,
+            visibility 320ms ease;
+        }
+        .mobile-nav-overlay.open {
+          opacity: 1;
+          visibility: visible;
+        }
+        .site-nav {
+          position: fixed;
+          z-index: 70;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: auto;
+          width: min(360px, 88vw);
+          max-height: none;
+          padding: 86px 20px 28px;
+          overflow-y: auto;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: stretch;
+          gap: 5px;
+          border: 0;
+          border-radius: 0;
+          opacity: 1;
+          background: #f8f6f0;
+          box-shadow: -22px 0 60px rgba(17, 17, 17, 0.2);
+          transform: translateX(104%);
+          transition: transform 360ms cubic-bezier(0.22, 0.8, 0.22, 1);
+        }
+        .site-nav.open,
+        #mobileNavToggle:checked ~ .site-nav {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100vw;
+          height: 100dvh;
+          max-height: none;
+          padding: 82px 22px 24px;
+          overflow: hidden;
+          opacity: 1;
+          transform: translateX(0);
+        }
+        body:has(#mobileNavToggle:checked) {
+          overflow: hidden;
+        }
+        .site-nav a {
+          width: 100%;
+          min-height: 50px;
+          display: flex;
+          align-items: center;
+          padding: 13px 14px;
+          border-radius: 12px;
+          font-size: 15px;
+        }
+        .site-nav .nav-cta {
+          width: 100%;
+          min-height: 52px;
+          margin-top: 12px;
+          justify-content: center;
+          text-align: center;
+        }
+        .site-nav a:not(.nav-cta)::after {
+          display: none;
+        }
+
+        body.builder-page-mode {
+          padding-bottom: 76px;
+        }
+        body.builder-page-mode .builder {
+          grid-template-columns: 1fr;
+        }
+        body.builder-page-mode .editor {
+          height: auto;
+          min-height: 0;
+          padding: 20px 16px 30px;
+          border-right: 0;
+          border-bottom: 1px solid #d2d2d2;
+          overflow: visible;
+        }
+        body.builder-page-mode .editor-top {
+          position: sticky;
+          top: 12px;
+          z-index: 4;
+        }
+        body.builder-page-mode input,
+        body.builder-page-mode textarea {
+          min-height: 46px;
+          padding: 11px 12px;
+          font-size: 16px;
+        }
+        body.builder-page-mode textarea {
+          min-height: 118px;
+        }
+        body.builder-page-mode .preview-shell {
+          height: auto;
+          min-height: 0;
+          display: block;
+          overflow: visible;
+          padding: 18px 12px 32px;
+          background: #f8f6f0;
+        }
+        body.builder-page-mode .resume-page {
+          width: 100%;
+          min-width: 0;
+          max-width: 880px;
+          min-height: auto;
+          margin: 0 auto;
+          box-shadow: none;
+        }
+        body.builder-page-mode .form-nav .nav-btn,
+        body.builder-page-mode .export-actions .print-btn {
+          min-height: 48px;
+        }
+        body.builder-page-mode .mobile-builder-actions {
+          position: fixed;
+          z-index: 75;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          gap: 8px;
+          padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+          border-top: 1px solid rgba(17, 17, 17, 0.1);
+          background: rgba(255, 255, 255, 0.94);
+          box-shadow: 0 -10px 30px rgba(17, 17, 17, 0.12);
+          backdrop-filter: blur(18px);
+        }
+        body.builder-page-mode .mobile-builder-actions button {
+          flex: 1;
+          min-height: 48px;
+          padding: 10px 8px;
+          border: 0;
+          border-radius: 11px;
+          color: #ffffff;
+          background: #111111;
+          font-size: 12px;
+          font-weight: 800;
+          white-space: nowrap;
+        }
+        body.builder-page-mode .mobile-builder-actions button:first-child {
+          color: #111111;
+          background: #f8f6f0;
+        }
+        body.builder-page-mode .mobile-builder-actions button:nth-child(2) {
+          background: #111111;
+        }
+      }
+
+      /* Phone layout: keep editing comfortable and show the A4 document in a dedicated
+   preview layer instead of compressing its desktop typography into a narrow column. */
+      .mobile-preview-toolbar {
+        display: none;
+      }
+      @media (max-width: 760px) {
+        body.builder-page-mode .editor {
+          padding: 16px 14px 28px;
+        }
+        body.builder-page-mode .editor-top {
+          position: static;
+          display: flex;
+          gap: 12px;
+          padding: 0 0 14px;
+        }
+        body.builder-page-mode .editor-title {
+          font-size: 17px;
+        }
+        body.builder-page-mode .editor-subtitle {
+          font-size: 11px;
+        }
+        body.builder-page-mode .app-card {
+          grid-template-columns: 1fr;
+          padding: 13px;
+        }
+        body.builder-page-mode .ad-slot {
+          min-height: 58px;
+          margin-bottom: 12px;
+        }
+        body.builder-page-mode .tabs {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          margin: 0 -2px 14px;
+          padding: 2px;
+          scrollbar-width: none;
+        }
+        body.builder-page-mode .tabs::-webkit-scrollbar {
+          display: none;
+        }
+        body.builder-page-mode .tab {
+          flex: 0 0 auto;
+          min-height: 38px;
+        }
+        body.builder-page-mode .grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        body.builder-page-mode .field.full {
+          grid-column: auto;
+        }
+        body.builder-page-mode .form-nav {
+          position: static;
+          padding-top: 4px;
+        }
+        body.builder-page-mode .preview-shell {
+          display: none;
+        }
+        body.builder-page-mode.mobile-preview-open {
+          overflow: hidden;
+        }
+        body.builder-page-mode.mobile-preview-open .preview-shell {
+          position: fixed;
+          z-index: 70;
+          inset: 0 0 69px;
+          display: block;
+          overflow: auto;
+          overscroll-behavior: contain;
+          padding: 58px 12px 24px;
+          background: #f8f6f0;
+        }
+        body.builder-page-mode.mobile-preview-open .mobile-preview-stage {
+          position: relative;
+          width: 100%;
+          height: 297mm;
+          overflow: hidden;
+        }
+        body.builder-page-mode.mobile-preview-open .resume-page {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 210mm;
+          min-width: 210mm;
+          max-width: none;
+          min-height: 297mm;
+          margin: 0;
+          box-shadow: 0 10px 28px rgba(17, 17, 17, 0.18);
+          transform: translateX(-50%) scale(var(--mobile-preview-scale, 1));
+          transform-origin: top center;
+        }
+        body.builder-page-mode.mobile-preview-open .mobile-preview-toolbar {
+          position: fixed;
+          z-index: 71;
+          top: 0;
+          right: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 52px;
+          padding: 9px 12px;
+          border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+          color: #111111;
+          background: rgba(255, 255, 255, 0.96);
+          box-shadow: 0 6px 20px rgba(17, 17, 17, 0.08);
+          font-size: 13px;
+          font-weight: 800;
+        }
+        body.builder-page-mode .mobile-preview-toolbar button {
+          min-height: 34px;
+          padding: 7px 12px;
+          border: 1px solid #111111;
+          border-radius: 9px;
+          color: #ffffff;
+          background: #111111;
+          font-size: 12px;
+          font-weight: 800;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .mobile-nav-overlay,
+        .mobile-builder-actions {
+          display: none;
+        }
+      }
+
+      /* Responsive hardening — these safeguards apply only below the desktop layout. */
+      @media (max-width: 1024px) {
+        img,
+        svg,
+        video,
+        canvas {
+          max-width: 100%;
+        }
+        .content-inner,
+        .hero-inner,
+        .site-footer-inner {
+          min-width: 0;
+        }
+        .hero-actions,
+        .template-actions,
+        .cookie-actions,
+        .newsletter {
+          min-width: 0;
+        }
+        .hero-actions > *,
+        .template-actions > *,
+        .newsletter > * {
+          min-width: 0;
+        }
+        .contact-card {
+          grid-template-columns: 1fr;
+        }
+        .contact-methods {
+          justify-items: start;
+          white-space: normal;
+        }
+        .modal {
+          width: calc(100% - 28px);
+          max-height: calc(100dvh - 28px);
+          overflow: auto;
+        }
+        .cookie-banner {
+          right: 14px;
+          bottom: 14px;
+          width: calc(100% - 28px);
+        }
+      }
+
+      @media (max-width: 760px) {
+        .site-header {
+          gap: 10px;
+        }
+        .site-brand {
+          min-width: 0;
+        }
+        .site-name {
+          overflow-wrap: anywhere;
+        }
+        .hero,
+        .content-section,
+        .build-intro {
+          padding-right: 16px;
+          padding-left: 16px;
+        }
+        .hero-premium {
+          min-height: auto;
+        }
+        .hero-actions {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .hero-actions .hero-button {
+          width: 100%;
+          min-height: 46px;
+        }
+        .template-actions {
+          flex-wrap: wrap;
+        }
+        .template-actions > * {
+          min-height: 44px;
+        }
+        .newsletter {
+          flex-wrap: wrap;
+        }
+        .newsletter input,
+        .newsletter button {
+          width: 100%;
+          min-height: 44px;
+        }
+        button,
+        .button,
+        .hero-button,
+        .template-action,
+        .store-btn,
+        .print-btn,
+        .nav-btn {
+          min-height: 44px;
+        }
+        .cookie-actions {
+          flex-wrap: wrap;
+        }
+        .cookie-actions button {
+          min-height: 44px;
+          flex: 1 1 120px;
+        }
+        body.builder-page-mode .tabs {
+          overflow: visible;
+        }
+        body.builder-page-mode .tab {
+          min-height: 44px;
+        }
+        body.builder-page-mode .entry-card,
+        body.builder-page-mode .form-section {
+          min-width: 0;
+        }
+        body.builder-page-mode .entry-head {
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        body.builder-page-mode .remove-btn,
+        body.builder-page-mode .add-btn {
+          min-height: 44px;
+        }
+        body.builder-page-mode .mobile-preview-toolbar button {
+          min-height: 44px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-premium h1 {
+          font-size: clamp(38px, 12vw, 48px);
+        }
+        .section-heading {
+          font-size: clamp(28px, 10vw, 38px);
+        }
+        .footer-hero,
+        .premium-card,
+        .legal-card,
+        .contact-card {
+          padding: 18px;
+        }
+        .footer-links {
+          grid-template-columns: 1fr;
+        }
+        body.builder-page-mode .editor {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+        body.builder-page-mode .tabs {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 7px;
+        }
+        body.builder-page-mode .tab {
+          width: 100%;
+          padding-right: 7px;
+          padding-left: 7px;
+          font-size: 10px;
+        }
+        body.builder-page-mode .mobile-builder-actions {
+          gap: 6px;
+          padding-right: 8px;
+          padding-left: 8px;
+        }
+        body.builder-page-mode .mobile-builder-actions button {
+          min-width: 0;
+          padding-right: 6px;
+          padding-left: 6px;
+          font-size: 11px;
+        }
+      }
+
+      @media (max-width: 359px) {
+        .site-header {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+        .site-logo {
+          width: 36px;
+          height: 36px;
+        }
+        .site-name {
+          font-size: 13px;
+        }
+        .hero,
+        .content-section,
+        .build-intro {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+        .hero-premium h1 {
+          font-size: 38px;
+        }
+        body.builder-page-mode input,
+        body.builder-page-mode textarea {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+
+      /* Header restore: compact premium nav. */
+      .site-header {
+        min-height: 54px;
+        padding: 6px clamp(18px, 4vw, 52px);
+        align-items: center;
+        flex-direction: row;
+        background: rgba(251, 250, 247, 0.92);
+        border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+        box-shadow: 0 10px 28px rgba(17, 17, 17, 0.04);
+        backdrop-filter: blur(18px);
+      }
+      .site-brand {
+        gap: 10px;
+        color: #111111;
+      }
+      .site-logo {
+        width: 38px;
+        height: 38px;
+        border-radius: 16px;
+        background: linear-gradient(145deg, #252116 0%, #111111 70%);
+        color: #ffffff;
+        box-shadow: 0 10px 24px rgba(17, 17, 17, 0.2);
+      }
+      .site-logo svg {
+        width: 22px;
+        height: 22px;
+      }
+      .site-name {
+        font-size: 15px;
+        letter-spacing: -0.025em;
+      }
+      .site-tag {
+        color: #8a806f;
+        font-size: 9px;
+        letter-spacing: 0.11em;
+      }
+      .site-nav {
+        gap: 14px;
+      }
+      .site-nav a {
+        padding: 8px 5px;
+        border-radius: 0;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .site-nav a:hover {
+        color: #111111;
+        background: transparent;
+        transform: none;
+      }
+      .site-nav a:not(.nav-cta)::after {
+        left: 5px;
+        right: 5px;
+        bottom: 1px;
+        height: 2px;
+        background: #c8a96e;
+      }
+      .site-nav .nav-cta {
+        padding: 10px 18px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #111111;
+        box-shadow: 0 12px 26px rgba(17, 17, 17, 0.18);
+      }
+      .site-nav .nav-cta:hover {
+        color: #ffffff;
+        background: #111111;
+      }
+      .site-header.scrolled {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background: rgba(251, 250, 247, 0.95);
+        box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+      }
+      @media (min-width: 1100px) {
+        .site-header {
+          min-height: 54px;
+          padding: 6px clamp(24px, 4vw, 54px);
+        }
+        .site-logo {
+          width: 38px;
+          height: 38px;
+        }
+        .site-logo svg {
+          width: 22px;
+          height: 22px;
+        }
+        .site-name {
+          font-size: 15px;
+        }
+        .site-tag {
+          font-size: 9px;
+        }
+        .site-nav {
+          gap: 14px;
+        }
+        .site-nav a {
+          padding: 8px 5px;
+          font-size: 12px;
+        }
+        .site-nav .nav-cta {
+          padding: 10px 18px;
+        }
+      }
+      @media (max-width: 1024px) {
+        .site-header {
+          min-height: 64px;
+          padding: 12px 16px;
+        }
+        .site-nav a {
+          border-radius: 12px;
+        }
+      }
+
+      /* Keep the generated document independent from mobile preview sizing. */
+      @media print {
+        body.builder-page-mode .preview-shell {
+          display: block;
+          height: auto;
+          overflow: visible;
+          padding: 0;
+          background: #ffffff;
+        }
+        body.builder-page-mode .resume-page {
+          width: 210mm;
+          height: 297mm;
+          min-width: 210mm;
+          min-height: 297mm;
+          max-width: none;
+          margin: 0;
+          box-shadow: none;
+        }
+      }
+
+      /* --- LPU OFFICIAL GENERAL CV OVERRIDES --- */
+      .resume-page.template-modern {
+        font-family: "Times New Roman", Times, serif !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+      }
+
+      .resume-page.template-modern .section-title {
+        color: #1a237e !important;
+        text-transform: uppercase !important;
+        font-weight: bold !important;
+        border-bottom: 1px solid #000000 !important;
+        margin-bottom: 4px !important;
+        margin-top: 10px !important;
+        font-size: 11pt !important;
+        padding-bottom: 2px !important;
+        padding-top: 0px !important;
+      }
+
+      .resume-page.template-modern .resume-section {
+        margin-bottom: 6px !important;
+      }
+
+      .resume-page.template-modern .entry {
+        margin-bottom: 6px !important;
+      }
+
+      .resume-page.template-modern .skill-line {
+        margin-bottom: 2px !important;
+      }
+
+      .resume-page.template-modern .skill-line strong {
+        color: #1a237e !important;
+        font-weight: bold !important;
+      }
+
+      .resume-page.template-modern .entry-title {
+        color: #1a237e !important;
+        font-weight: bold !important;
+        font-size: 11pt !important;
+      }
+
+      .resume-page.template-modern .entry-sub {
+        font-style: italic !important;
+        color: #000000 !important;
+        margin-top: 1px !important;
+        margin-bottom: 1px !important;
+      }
+
+      .resume-page.template-modern .entry-right-sub {
+        color: #000000 !important;
+      }
+
+      .resume-page.template-modern .bullets {
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+        padding-left: 24px !important;
+      }
+
+      .resume-page.template-modern .bullets li {
+        margin-bottom: 1px !important;
+        line-height: 1.2 !important;
+      }
+
+      .resume-page.template-modern .entry-tech {
+        color: #1a237e !important;
+        font-weight: normal !important;
+        font-style: italic !important;
+      }
+
+      .resume-page.template-modern .entry-pipe {
+        color: #1a237e !important;
+        font-weight: bold !important;
+      }
+
+      .resume-page.template-modern .entry-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .resume-page.template-modern .entry-date {
+        font-weight: normal !important;
+        color: #000000 !important;
+        white-space: nowrap;
+        margin-left: 10px;
+      }
+    </style>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2378485312894191"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-brand" href="#home" aria-label="ATS Resume Builder home">
+        <span class="site-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path
+              d="M9 6.5h14c1.4 0 2.5 1.1 2.5 2.5v14c0 1.4-1.1 2.5-2.5 2.5H9A2.5 2.5 0 0 1 6.5 23V9C6.5 7.6 7.6 6.5 9 6.5Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M11 12h10M11 16h10M11 20h6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M22.4 20.2 25.8 24"
+              stroke="#c8a96e"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </span>
+        <span>
+          <span class="site-name">ATS Resume Builder</span>
+          <span class="site-tag">Premium A4 Resume Tool</span>
+        </span>
+      </a>
+      <input
+        class="nav-state"
+        type="checkbox"
+        id="mobileNavToggle"
+        aria-hidden="true"
+        tabindex="-1"
+      />
+      <label
+        class="nav-toggle"
+        for="mobileNavToggle"
+        role="button"
+        aria-controls="siteNavMenu"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="site-nav" id="siteNavMenu" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#templates">Resume Templates</a>
+        <a href="#blog">Blog</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+        <a href="#app-download">Android App</a>
+        <a class="nav-cta" href="builder/">Build Resume</a>
+      </nav>
+    </header>
+    <div
+      class="mobile-nav-overlay"
+      id="mobileNavOverlay"
+      aria-hidden="true"
+    ></div>
+
+    <main id="home">
+      <section class="hero hero-premium">
+        <div class="hero-inner">
+          <div>
+            <div class="eyebrow">ATS-ready resume generator</div>
+            <h1>
+              Create an ATS-friendly resume that looks professionally built.
+            </h1>
+            <p class="hero-copy">
+              ATS Resume Builder is a fast online resume maker for students,
+              freshers, and professionals. Build a polished A4 CV with live
+              preview, organized sections, clean formatting, and PDF export.
+            </p>
+            <div class="hero-actions">
+              <a class="hero-button primary" href="builder/">Build My Resume</a>
+              <a
+                class="hero-button store play-store-link"
+                id="playStoreLinkHero"
+                href="https://play.google.com/store/apps/details?id=com.dmappstudios.resumebuilder"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Get Android App</a
+              >
+              <a class="hero-button" href="#features">Explore Features</a>
+            </div>
+          </div>
+          <div
+            class="hero-visual"
+            aria-label="Live resume preview and product benefits"
+          >
+            <div class="float-chip score-chip">
+              <span class="chip-dot"></span
+              ><span>ATS Score<br /><strong>92 / 100</strong></span>
+            </div>
+            <article class="resume-float" aria-label="Example modern resume">
+              <div class="mini-name">Aarav Sharma</div>
+              <div class="mini-contact">
+                Delhi · aarav@email.com · linkedin.com/in/aarav
+              </div>
+              <div class="mini-rule"></div>
+              <div class="mini-heading">Experience</div>
+              <div class="mini-job">
+                Product Designer <span class="mini-date">2024 — Present</span>
+              </div>
+              <div class="mini-copy">
+                Designed clear, human-centered product experiences across web
+                and mobile.
+              </div>
+              <div class="mini-heading">Projects</div>
+              <div class="mini-job">Resume intelligence platform</div>
+              <div class="mini-copy">
+                Built a scalable workflow that helps candidates present their
+                best work.
+              </div>
+              <div class="mini-heading">Skills</div>
+              <div class="mini-copy">
+                Product design · Research · Figma · Design systems
+              </div>
+            </article>
+            <div class="float-chip pdf-chip">
+              ↓ <span>Exported<br /><strong>Resume.pdf</strong></span>
+            </div>
+            <div class="float-chip section-chip">
+              ✦
+              <span>Live sections<br /><strong>Updated instantly</strong></span>
+            </div>
+          </div>
+          <aside
+            class="hero-workflow"
+            aria-label="Professional resume workflow"
+          >
+            <div class="workflow-top">
+              <span>Professional resume workflow</span
+              ><span class="workflow-status">Live Preview</span>
+            </div>
+            <div class="workflow-step">
+              <span class="workflow-number">01</span>
+              <div>
+                <strong>Fixed A4 layout</strong>
+                <p>Your resume stays structured for preview and PDF export.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <span class="workflow-number">02</span>
+              <div>
+                <strong>Section-wise builder</strong>
+                <p>
+                  Add education, skills, certificates, projects, and experience
+                  step by step.
+                </p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <span class="workflow-number">03</span>
+              <div>
+                <strong>Ready when you are</strong>
+                <p>
+                  Review the live result and export a clean, professional PDF.
+                </p>
+              </div>
+            </div>
+            <div class="workflow-bottom">
+              <span class="chip-dot"></span
+              ><span>Everything updates instantly as you write.</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="content-section" id="features">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Everything you need</div>
+            <h2 class="section-heading">
+              A simpler path to an application-ready resume.
+            </h2>
+            <p class="section-copy">
+              Designed for clarity from the first line to your finished PDF.
+            </p>
+          </div>
+          <div class="premium-grid">
+            <div class="premium-card">
+              <strong>Live A4 preview</strong
+              ><span
+                >See your content update in a clean, fixed-page layout as you
+                work.</span
+              >
+            </div>
+            <div class="premium-card">
+              <strong>Export with confidence</strong
+              ><span
+                >Print or save a polished PDF directly from the browser.</span
+              >
+            </div>
+            <div class="premium-card">
+              <strong>Built for every stage</strong
+              ><span
+                >Useful for students, freshers, and experienced professionals
+                alike.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section templates-section" id="templates">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Resume Templates</div>
+            <h2 class="section-heading">
+              Choose a template with a professional edge.
+            </h2>
+            <p class="section-copy">
+              Modern is ready to use today. Our next collection is being crafted
+              with the same ATS-first standard.
+            </p>
+          </div>
+          <div
+            class="template-grid"
+            id="templateGrid"
+            aria-label="Resume template gallery"
+          ></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="blog">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Career Journal</div>
+            <h2 class="section-heading">Practical advice for the next move.</h2>
+            <p class="section-copy">
+              A foundation for helpful, SEO-ready career content. More articles
+              are on the way.
+            </p>
+          </div>
+          <div class="blog-grid" id="blogGrid"></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="about">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">About Us</div>
+            <h2 class="section-heading">
+              A premium resume tool built for clarity.
+            </h2>
+            <p class="section-copy">
+              ATS Resume Builder helps users create a clean professional resume
+              with a fixed A4 preview, organized sections, certificates,
+              projects, skills, education, experience, and simple PDF export.
+              The experience is designed to feel calm, fast, and reliable.
+            </p>
+          </div>
+          <div class="premium-grid">
+            <div class="premium-card">
+              <strong>Built for focus</strong
+              ><span
+                >No noisy setup. Users can directly start entering details and
+                see the resume update live.</span
+              >
+            </div>
+            <div class="premium-card">
+              <strong>ATS-friendly structure</strong
+              ><span
+                >Clear sections, readable hierarchy, and practical formatting
+                for real job applications.</span
+              >
+            </div>
+            <div class="premium-card">
+              <strong>Ready to scale</strong
+              ><span
+                >App promotion and ad placements are prepared without disturbing
+                the resume builder.</span
+              >
+            </div>
+          </div>
+          <div class="legal-grid" style="margin-top: 14px">
+            <div class="legal-card">
+              <h3>Our mission & vision</h3>
+              <p>
+                Make confident, professional self-presentation more accessible
+                for every job seeker, without unnecessary complexity.
+              </p>
+            </div>
+            <div class="legal-card">
+              <h3>What’s next</h3>
+              <p>
+                More templates, resume analysis, AI-assisted review, cover
+                letters, and interview preparation are planned for future
+                releases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="contact">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Contact Us</div>
+            <h2 class="section-heading">
+              Need help or want to share feedback?
+            </h2>
+          </div>
+          <div class="contact-card">
+            <p class="section-copy">
+              For resume builder support, Android app updates, partnership
+              questions, website feedback, or ad-related queries, contact us
+              anytime.
+            </p>
+            <div class="contact-methods">
+              <a href="mailto:app.devansh@gmail.com">app.devansh@gmail.com</a>
+              <a href="tel:+919569351187">+91 9569351187</a>
+            </div>
+          </div>
+          <div class="faq-list" style="margin-top: 14px">
+            <details>
+              <summary>Is my resume data stored?</summary>
+              <p>
+                Currently, the builder works locally in your browser for live
+                preview and PDF export.
+              </p>
+            </details>
+            <details>
+              <summary>Is the Modern template ATS-friendly?</summary>
+              <p>
+                Yes. It uses clear headings, readable text, and a structured
+                layout designed for common application workflows.
+              </p>
+            </details>
+            <details>
+              <summary>Can I use this on mobile?</summary>
+              <p>
+                Yes. The surrounding experience and builder adapt across phones,
+                tablets, and desktop screens.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="privacy">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Privacy Policy</div>
+            <h2 class="section-heading">
+              Privacy Policy for ATS Resume Builder.
+            </h2>
+            <p class="section-copy">
+              This website currently builds resumes locally in the browser.
+              Personal details typed into the resume form are used to update the
+              live preview and generate the PDF print view.
+            </p>
+          </div>
+          <div class="legal-grid">
+            <div class="legal-card">
+              <h3>Data usage</h3>
+              <p>
+                Resume information entered by the user is used only for preview
+                and export inside this page unless you later connect external
+                services.
+              </p>
+            </div>
+            <div class="legal-card">
+              <h3>Ads and app links</h3>
+              <p>
+                Future advertisements or Google Play links may use third-party
+                services. Update this policy with provider details before
+                publishing ads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="terms">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Terms</div>
+            <h2 class="section-heading">Terms for using ATS Resume Builder.</h2>
+            <p class="section-copy">
+              Users are responsible for the accuracy of their resume
+              information. The tool provides formatting, live preview, and PDF
+              export support, but does not guarantee job selection, interview
+              calls, or ATS ranking.
+            </p>
+          </div>
+          <div class="legal-grid">
+            <div class="legal-card">
+              <h3>Use of service</h3>
+              <p>
+                Use the builder for personal resume creation, review, and PDF
+                export.
+              </p>
+            </div>
+            <div class="legal-card">
+              <h3>Content responsibility</h3>
+              <p>
+                Please verify all resume details, links, dates, and claims
+                before submitting applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="disclaimer">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Disclaimer</div>
+            <h2 class="section-heading">Helpful tools, thoughtful choices.</h2>
+            <p class="section-copy">
+              ATS Resume Builder provides formatting and export tools, not
+              employment, legal, or career-placement guarantees. Always review
+              the final document before applying.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="cookies">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Cookie Policy</div>
+            <h2 class="section-heading">Your choices stay in your control.</h2>
+            <p class="section-copy">
+              We use browser storage only to remember your cookie preference. If
+              analytics or advertising services are added, this policy should be
+              updated with their details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="build-section" id="build-resume">
+      <div class="build-intro">
+        <div class="content-inner">
+          <div class="section-head">
+            <div class="section-kicker">Build Your Resume</div>
+            <h2 class="section-heading">Generate your resume</h2>
+            <p class="section-copy">
+              Fill each section, preview your ATS-friendly A4 resume live, and
+              export it as a clean PDF.
+            </p>
+          </div>
+          <a class="hero-button primary" href="./" target="_parent">Back to Dashboard</a>
+        </div>
+      </div>
+
+      <div class="builder">
+        <aside class="editor">
+          <div class="editor-top">
+            <div class="brand">
+              <div class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M9 6.5h14c1.4 0 2.5 1.1 2.5 2.5v14c0 1.4-1.1 2.5-2.5 2.5H9A2.5 2.5 0 0 1 6.5 23V9C6.5 7.6 7.6 6.5 9 6.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M11 12h10M11 16h10M11 20h6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M22.4 20.2 25.8 24"
+                    stroke="#c8a96e"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="editor-title">ATS Resume Builder</div>
+                <div class="editor-subtitle">
+                  Build a polished, ATS-ready resume with precise A4 export.
+                </div>
+              </div>
+            </div>
+            <div class="export-actions">
+              <button class="print-btn" onclick="downloadPdf()">
+                Export PDF
+              </button>
+              <button
+                class="print-btn"
+                onclick="downloadDoc()"
+                style="
+                  background: linear-gradient(180deg, #2b579a, #1e3f73);
+                  border-color: #1e3f73;
+                "
+              >
+                Import DOC
+              </button>
+            </div>
+          </div>
+
+          <div class="app-card" id="app-download">
+            <div class="app-copy">
+              <div class="app-kicker">Now on Android</div>
+              <div class="app-title">
+                Build resumes faster on the mobile app.
+              </div>
+              <div class="app-text">
+                Download the official ATS Resume Builder app from Google Play
+                when the store link is connected.
+              </div>
+            </div>
+            <a
+              class="store-btn play-store-link"
+              id="playStoreLink"
+              href="https://play.google.com/store/apps/details?id=com.dmappstudios.resumebuilder"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get the Android app on Google Play"
+            >
+              <span class="store-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M5.2 3.2c-.4.2-.7.7-.7 1.4v14.8c0 .7.3 1.2.7 1.4l8.5-8.8-8.5-8.8Z"
+                  />
+                  <path d="m15 10.7 2.2-2.3L7.1 2.7l7.9 8Z" />
+                  <path d="m15 13.3-7.9 8 10.1-5.7-2.2-2.3Z" />
+                  <path
+                    d="m16.2 12 2.8 2.8 1.2-.7c1-.6 1-1.6 0-2.2l-1.2-.7-2.8 2.8Z"
+                  />
+                </svg>
+              </span>
+              <span class="store-lines">
+                <span class="store-small">GET IT ON</span>
+                <span class="store-main">Google Play</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="tabs" id="tabs"></div>
+
+          <section class="form-section active" id="section-personal">
+            <div class="section-caption">Personal</div>
+            <div class="grid">
+              <div class="field">
+                <label>First Name</label
+                ><input
+                  id="firstName"
+                  value="First"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field">
+                <label>Last Name</label
+                ><input id="lastName" value="Last" oninput="updatePreview()" />
+              </div>
+              <div class="field full">
+                <label>Location</label
+                ><input
+                  id="location"
+                  value="Mathura, Uttar Pradesh 281001"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field">
+                <label>Phone</label
+                ><input
+                  id="phone"
+                  value="+91 1234567890"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field">
+                <label>Email</label
+                ><input
+                  id="email"
+                  value="sXXXXXXXXX@gmail.com"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field">
+                <label>LinkedIn</label
+                ><input
+                  id="linkedin"
+                  value="linkedin.com/in/sXXXXXXXXX"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field">
+                <label>Github</label
+                ><input
+                  id="github"
+                  value="github.com/sxxx-cce12/"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field full">
+                <label>Github note</label
+                ><input
+                  id="githubNote"
+                  value="for coders"
+                  oninput="updatePreview()"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" id="section-experience">
+            <div class="section-caption">Internship / Experience</div>
+            <div id="expList"></div>
+            <button class="add-btn" onclick="addExp()">Add Experience</button>
+          </section>
+
+          <section class="form-section" id="section-projects">
+            <div class="section-caption">Projects</div>
+            <div id="projectList"></div>
+            <button class="add-btn" onclick="addProject()">Add Project</button>
+          </section>
+
+          <section class="form-section" id="section-certificates">
+            <div class="section-caption">Certificates</div>
+            <div id="certList"></div>
+            <button class="add-btn" onclick="addCert()">Add Certificate</button>
+          </section>
+
+          <section class="form-section" id="section-skills">
+            <div class="section-caption">Skills</div>
+            <div class="grid">
+              <div class="field full">
+                <label>Programming Languages</label
+                ><input
+                  id="skillProgLang"
+                  value="C++, Java, R, JavaScript"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field full">
+                <label>Technologies / Frameworks</label
+                ><input
+                  id="skillTech"
+                  value="React, Node.js, Express.js"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field full">
+                <label>Database</label
+                ><input
+                  id="skillDatabase"
+                  value="SQL"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field full">
+                <label>Version Control</label
+                ><input
+                  id="skillVersion"
+                  value="Git, GitHub"
+                  oninput="updatePreview()"
+                />
+              </div>
+              <div class="field full">
+                <label>Soft Skills</label
+                ><input
+                  id="skillSoft"
+                  value="Problem-Solving, Team Player, Adaptability"
+                  oninput="updatePreview()"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" id="section-education">
+            <div class="section-caption">Education</div>
+            <div id="eduList"></div>
+            <button class="add-btn" onclick="addEdu()">Add Education</button>
+          </section>
+
+          <section class="form-section" id="section-custom">
+            <div class="section-caption">Custom Section</div>
+            <div class="grid" style="margin-bottom: 24px">
+              <div class="field full">
+                <label>Section Title</label
+                ><input
+                  id="customTitleInput"
+                  placeholder="Achievements"
+                  value=""
+                  oninput="
+                    customTitle = this.value;
+                    updatePreview();
+                  "
+                />
+              </div>
+            </div>
+            <div id="customList"></div>
+            <button class="add-btn" onclick="addCustom()">Add Item</button>
+          </section>
+
+          <div class="form-nav">
+            <button
+              class="nav-btn secondary"
+              id="prevBtn"
+              onclick="moveStep(-1)"
+            >
+              Back
+            </button>
+            <button class="nav-btn" id="nextBtn" onclick="moveStep(1)">
+              Next
+            </button>
+          </div>
+        </aside>
+
+        <main class="preview-shell" id="resumePreviewPanel" tabindex="-1">
+          <div class="mobile-preview-toolbar">
+            <span>Live resume preview</span
+            ><button type="button" onclick="closeMobilePreview()">Close</button>
+          </div>
+          <div class="mobile-preview-stage">
+            <article class="resume-page" id="resumePreview"></article>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <div class="mobile-builder-actions" aria-label="Resume builder actions">
+      <button type="button" onclick="openMobilePreview()">Preview</button>
+      <button type="button" onclick="downloadPdf()">Download PDF</button>
+      <button type="button" onclick="downloadDoc()">Import DOC</button>
+    </div>
+
+    <div data-site-footer data-root="."></div>
+
+    <div
+      class="modal-backdrop"
+      id="comingSoonModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal">
+        <div class="modal-icon">🚀</div>
+        <h2 id="modalTitle">More Premium Templates Coming Soon</h2>
+        <p>
+          We’re designing a focused collection of ATS-ready layouts for every
+          career stage.
+        </p>
+        <button type="button" onclick="closeComingSoon()">Got it</button>
+      </div>
+    </div>
+    <aside class="cookie-banner" id="cookieBanner" aria-label="Cookie consent">
+      <strong>Cookie preferences</strong>
+      <p>
+        We use a small local preference to remember your choice. See our
+        <a href="cookies/">Cookie Policy</a>.
+      </p>
+      <div class="cookie-actions">
+        <button type="button" onclick="setCookiePreference('rejected')">
+          Reject</button
+        ><button
+          type="button"
+          onclick="setCookiePreference('accepted')"
+          class="accept"
+        >
+          Accept
+        </button>
+      </div>
+    </aside>
+
+    <script src="site.js"></script>
+    <script>
+      const tabs = [
+        { id: "personal", label: "Personal" },
+        { id: "experience", label: "Experience" },
+        { id: "projects", label: "Projects" },
+        { id: "certificates", label: "Certificates" },
+        { id: "skills", label: "Skills" },
+        { id: "education", label: "Education" },
+        { id: "custom", label: "+ Add Section" },
+      ];
+
+      let currentStep = 0;
+
+      let experiences = [
+        {
+          company: "SEPI Intern",
+          role: "Tableau, SAP, DNS, SSL Certification, CNAME",
+          date: "May 2023 - Jul 2023",
+          sub: "JP Morgan Chase & Co.",
+          bullets: [
+            "Contributed to the advancement of the organization's robust Document Manager web application.",
+            "Improved user experience and productivity by implementing comprehensive row grouping, column filtering, and data filtering functionality using Angular Ag-Grid, enabling easier and faster navigation to relevant records.",
+            "Enhanced application performance, improved records' load time, and increased overall efficiency by implementing server-side pagination, and nested child pagination.",
+            "Wrote Angular unit test cases using the Jasmine framework to validate the responsiveness of the grid on different resolutions, evaluate the functionality of row grouping and data filtering code, and verify the accuracy of API calls to the database. Created mocks, stubs, and spies, ensuring the isolation of dependencies and simulation of diverse scenarios for robust and stable code.",
+          ],
+        },
+        {
+          company: "Full Stack Web Developer Intern",
+          role: "Tableau, SAP, DNS, SSL Certification, CNAME",
+          date: "Feb 2022 - Aug 2022",
+          sub: "edureka",
+          bullets: [
+            "Built two dynamic web applications, Flipkart Clone and Zomato Clone, leveraging the power of the MERN stack.",
+            "Automated web data collection through software tools and custom scripts, streamlining repetitive tasks effectively.",
+          ],
+        },
+      ];
+
+      let projects = [
+        {
+          name: "Fkart App",
+          link: "",
+          tech: "MERN Stack, Responsive Web Design",
+          date: "Jul 2022 - Aug 2022",
+          bullets: [
+            "Developed an e-commerce platform wherein users can buy numerous products such as electronics, clothing, and more.",
+            "It offers dynamic data from MongoDB, responsive design, dynamic pagination based on data, and developer REST APIs for insertion, retrieval, deletion of data, user authentication, individual user data storage, and other advanced tasks.",
+            "Applied MERN stack knowledge successfully to create a fully functional MERN stack website.",
+            "Repository Link: https://github.com/suraj-singh12/flipkart-project",
+          ],
+        },
+        {
+          name: "Project SearchEverywhere",
+          link: "",
+          tech: "Python3, Linux, Grep, Open Office, Bash, MS Office",
+          date: "Feb 2021 - Mar 2023",
+          bullets: [
+            "Designed an open-source Linux tool that allows users to search for specific information in multiple file of types including documents, presentations, spreadsheets, and text files.",
+            "This is an enhancement to the 'grep' command on Linux systems which only allows searching in text files only.",
+            "Used extensively by students for preparation of university exams during COVID-19 times.",
+            "Repository Link: https://github.com/suraj-singh12/Project-SearchEverywhere",
+          ],
+        },
+      ];
+
+      let certificates = [
+        {
+          name: "Full Stack Web Development",
+          org: "edureka",
+          link: "Certificate Link",
+          date: "Aug 2022",
+          bullets: ["Completed full stack web development certification."],
+        },
+        {
+          name: "Linux for Developers",
+          org: "Coursera",
+          link: "Certificate Link",
+          date: "Mar 2021",
+          bullets: ["Completed Linux developer certification."],
+        },
+      ];
+
+      let education = [
+        {
+          school: "Lovely Professional University",
+          date: "2020 - 2024",
+          degree: "Bachelor of Technology - Computer Science and Engineering",
+          score: "CGPA: 8.23",
+          place: "Phagwara, Punjab",
+        },
+        {
+          school: "Kendriya Vidyalaya Mathura Cantt",
+          date: "2018 - 2019",
+          degree: "12th",
+          score: "Percentage: 94.60%",
+          place: "Mathura, Uttar Pradesh",
+        },
+        {
+          school: "Kendriya Vidyalaya Shahjahanpur Cantt",
+          date: "2016 - 2017",
+          degree: "10th",
+          score: "CGPA: 10",
+          place: "Shahjahanpur, Uttar Pradesh",
+        },
+      ];
+
+      let customTitle = "";
+      let customItems = [
+        {
+          company: "",
+          role: "",
+          date: "",
+          sub: "",
+          bullets: [],
+        },
+      ];
+
+      function escapeHtml(value) {
+        return String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function linkUrl(value) {
+        const text = String(value || "").trim();
+        if (!text) return "";
+        if (/^https?:\/\//i.test(text)) return text;
+        return `https://${text}`;
+      }
+
+      function value(id) {
+        return document.getElementById(id)?.value.trim() || "";
+      }
+
+      function stripBullet(text) {
+        return String(text || "")
+          .replace(/^[-*\u2022]\s*/, "")
+          .trim();
+      }
+
+      function textAreaLines(text) {
+        return String(text || "")
+          .split("\n")
+          .map(stripBullet)
+          .filter(Boolean);
+      }
+
+      let draggedTabIndex = null;
+
+      function handleDragStart(e, index) {
+        if (tabs[index].id === "personal") {
+          e.preventDefault();
+          return;
+        }
+        draggedTabIndex = index;
+        e.dataTransfer.effectAllowed = "move";
+      }
+
+      function handleDragOver(e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+      }
+
+      function handleDrop(e, dropIndex) {
+        e.preventDefault();
+        if (draggedTabIndex === null || draggedTabIndex === dropIndex) return;
+        if (tabs[dropIndex].id === "personal") return;
+
+        const draggedTab = tabs.splice(draggedTabIndex, 1)[0];
+        tabs.splice(dropIndex, 0, draggedTab);
+
+        const activeTabId = document
+          .querySelector(".form-section.active")
+          ?.id.replace("section-", "");
+        currentStep = tabs.findIndex((t) => t.id === activeTabId);
+        if (currentStep === -1) currentStep = 0;
+
+        renderTabs();
+        updatePreview();
+      }
+
+      function renderTabs() {
+        document.getElementById("tabs").innerHTML = tabs
+          .map(
+            (tab, index) =>
+              `<button class="tab ${index === currentStep ? "active" : ""}" onclick="goToStep(${index})" ${tab.id !== "personal" ? `draggable="true" ondragstart="handleDragStart(event, ${index})" ondragover="handleDragOver(event)" ondrop="handleDrop(event, ${index})" title="Drag to reorder"` : ""}>${tab.label}</button>`,
+          )
+          .join("");
+      }
+
+      function goToStep(index) {
+        document
+          .getElementById(`section-${tabs[currentStep].id}`)
+          .classList.remove("active");
+        currentStep = Math.max(0, Math.min(tabs.length - 1, index));
+        document
+          .getElementById(`section-${tabs[currentStep].id}`)
+          .classList.add("active");
+        renderTabs();
+        updateNav();
+      }
+
+      function moveStep(delta) {
+        goToStep(currentStep + delta);
+      }
+
+      function updateNav() {
+        document.getElementById("prevBtn").style.visibility =
+          currentStep === 0 ? "hidden" : "visible";
+        document.getElementById("nextBtn").style.visibility =
+          currentStep === tabs.length - 1 ? "hidden" : "visible";
+      }
+
+      function field(label, html, full = false) {
+        return `<div class="field ${full ? "full" : ""}"><label>${label}</label>${html}</div>`;
+      }
+
+      function renderExperienceEditor() {
+        document.getElementById("expList").innerHTML = experiences
+          .map(
+            (item, index) => `
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-label">Experience ${index + 1}</div>
+        ${experiences.length > 1 ? `<button class="remove-btn" onclick="removeExp(${index})">Remove</button>` : ""}
+      </div>
+      <div class="grid">
+        ${field("Company", `<input value="${escapeHtml(item.company)}" oninput="experiences[${index}].company=this.value;updatePreview()">`, true)}
+        ${field("Role / Tech", `<input value="${escapeHtml(item.role)}" oninput="experiences[${index}].role=this.value;updatePreview()">`, true)}
+        ${field("Date", `<input value="${escapeHtml(item.date)}" oninput="experiences[${index}].date=this.value;updatePreview()">`)}
+        ${field("Sub line", `<input value="${escapeHtml(item.sub)}" oninput="experiences[${index}].sub=this.value;updatePreview()">`)}
+        ${field("Bullets", `<textarea oninput="experiences[${index}].bullets=textAreaLines(this.value);updatePreview()">${escapeHtml(item.bullets.join("\n"))}</textarea>`, true)}
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function addExp() {
+        experiences.push({
+          company: "",
+          role: "",
+          date: "",
+          sub: "",
+          bullets: [""],
+        });
+        renderExperienceEditor();
+        updatePreview();
+      }
+
+      function removeExp(index) {
+        experiences.splice(index, 1);
+        renderExperienceEditor();
+        updatePreview();
+      }
+
+      function renderProjectEditor() {
+        document.getElementById("projectList").innerHTML = projects
+          .map(
+            (item, index) => `
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-label">Project ${index + 1}</div>
+        ${projects.length > 1 ? `<button class="remove-btn" onclick="removeProject(${index})">Remove</button>` : ""}
+      </div>
+      <div class="grid">
+        ${field("Project Name", `<input value="${escapeHtml(item.name)}" oninput="projects[${index}].name=this.value;updatePreview()">`, true)}
+        ${field("Project Link", `<input value="${escapeHtml(item.link)}" oninput="projects[${index}].link=this.value;updatePreview()">`)}
+        ${field("Date", `<input value="${escapeHtml(item.date)}" oninput="projects[${index}].date=this.value;updatePreview()">`)}
+        ${field("Tech", `<input value="${escapeHtml(item.tech)}" oninput="projects[${index}].tech=this.value;updatePreview()">`, true)}
+        ${field("Bullets", `<textarea oninput="projects[${index}].bullets=textAreaLines(this.value);updatePreview()">${escapeHtml(item.bullets.join("\n"))}</textarea>`, true)}
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function addProject() {
+        projects.push({
+          name: "",
+          link: "",
+          tech: "",
+          date: "",
+          bullets: [""],
+        });
+        renderProjectEditor();
+        updatePreview();
+      }
+
+      function removeProject(index) {
+        projects.splice(index, 1);
+        renderProjectEditor();
+        updatePreview();
+      }
+
+      function renderCertEditor() {
+        document.getElementById("certList").innerHTML = certificates
+          .map(
+            (item, index) => `
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-label">Certificate ${index + 1}</div>
+        ${certificates.length > 1 ? `<button class="remove-btn" onclick="removeCert(${index})">Remove</button>` : ""}
+      </div>
+      <div class="grid">
+        ${field("Certificate", `<input value="${escapeHtml(item.name)}" oninput="certificates[${index}].name=this.value;updatePreview()">`, true)}
+        ${field("Issuer", `<input value="${escapeHtml(item.org)}" oninput="certificates[${index}].org=this.value;updatePreview()">`)}
+        ${field("Date", `<input value="${escapeHtml(item.date)}" oninput="certificates[${index}].date=this.value;updatePreview()">`)}
+        ${field("Link Text", `<input value="${escapeHtml(item.link)}" oninput="certificates[${index}].link=this.value;updatePreview()">`, true)}
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function addCert() {
+        certificates.push({
+          name: "",
+          org: "",
+          link: "",
+          date: "",
+          bullets: [""],
+        });
+        renderCertEditor();
+        updatePreview();
+      }
+
+      function removeCert(index) {
+        certificates.splice(index, 1);
+        renderCertEditor();
+        updatePreview();
+      }
+
+      function renderEduEditor() {
+        document.getElementById("eduList").innerHTML = education
+          .map(
+            (item, index) => `
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-label">Education ${index + 1}</div>
+        ${education.length > 1 ? `<button class="remove-btn" onclick="removeEdu(${index})">Remove</button>` : ""}
+      </div>
+      <div class="grid">
+        ${field("Institution", `<input value="${escapeHtml(item.school)}" oninput="education[${index}].school=this.value;updatePreview()">`, true)}
+        ${field("Date", `<input value="${escapeHtml(item.date)}" oninput="education[${index}].date=this.value;updatePreview()">`)}
+        ${field("Location", `<input value="${escapeHtml(item.place)}" oninput="education[${index}].place=this.value;updatePreview()">`)}
+        ${field("Degree", `<input value="${escapeHtml(item.degree)}" oninput="education[${index}].degree=this.value;updatePreview()">`, true)}
+        ${field("Score", `<input value="${escapeHtml(item.score)}" oninput="education[${index}].score=this.value;updatePreview()">`, true)}
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function addEdu() {
+        education.push({
+          school: "",
+          date: "",
+          degree: "",
+          score: "",
+          place: "",
+        });
+        renderEduEditor();
+        updatePreview();
+      }
+
+      function removeEdu(index) {
+        education.splice(index, 1);
+        renderEduEditor();
+        updatePreview();
+      }
+
+      function renderCustomEditor() {
+        document.getElementById("customList").innerHTML = customItems
+          .map(
+            (item, index) => `
+    <div class="entry-card">
+      <div class="entry-head">
+        <div class="entry-label">Item ${index + 1}</div>
+        ${customItems.length > 1 ? `<button class="remove-btn" onclick="removeCustom(${index})">Remove</button>` : ""}
+      </div>
+      <div class="grid">
+        ${field("Item Title", `<input placeholder="First Prize in Hackathon" value="${escapeHtml(item.company)}" oninput="customItems[${index}].company=this.value;updatePreview()">`, true)}
+        ${field("Role / Info", `<input placeholder="National Level" value="${escapeHtml(item.role)}" oninput="customItems[${index}].role=this.value;updatePreview()">`, true)}
+        ${field("Date", `<input placeholder="Oct 2023" value="${escapeHtml(item.date)}" oninput="customItems[${index}].date=this.value;updatePreview()">`)}
+        ${field("Sub line", `<input placeholder="TechFest 2023" value="${escapeHtml(item.sub)}" oninput="customItems[${index}].sub=this.value;updatePreview()">`)}
+        ${field("Bullets", `<textarea placeholder="Led a team of 4 to build a React application.\nWon among 500+ participating teams." oninput="customItems[${index}].bullets=textAreaLines(this.value);updatePreview()">${escapeHtml(item.bullets.join("\n"))}</textarea>`, true)}
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function addCustom() {
+        customItems.push({
+          company: "",
+          role: "",
+          date: "",
+          sub: "",
+          bullets: [""],
+        });
+        renderCustomEditor();
+        updatePreview();
+      }
+
+      function removeCustom(index) {
+        customItems.splice(index, 1);
+        renderCustomEditor();
+        updatePreview();
+      }
+
+      function renderCustomItemsOutput() {
+        return customItems
+          .filter((item) => item.company || item.role || item.sub || (item.bullets && item.bullets.length))
+          .map((item) => {
+            const hasHeader = item.company || item.role || item.date;
+            return `
+    <div class="entry">
+      ${hasHeader ? `
+      <div class="entry-row">
+        <div class="entry-main">
+          <span class="entry-title">${escapeHtml(item.company)}</span>${item.role ? `<span class="entry-pipe"> | </span><span class="entry-tech">${escapeHtml(item.role)}</span>` : ""}
+        </div>
+        <div class="entry-date">${escapeHtml(item.date)}</div>
+      </div>
+      ` : ""}
+      ${item.sub ? `<div class="entry-sub">${escapeHtml(item.sub)}</div>` : ""}
+      ${renderBullets(item.bullets)}
+    </div>
+  `;
+          })
+          .join("");
+      }
+
+      function renderSection(title, content) {
+        if (!content.trim()) return "";
+        return `<section class="resume-section"><div class="section-title">${title}</div>${content}</section>`;
+      }
+
+      function renderBullets(items) {
+        const bullets = items.map(stripBullet).filter(Boolean);
+        if (!bullets.length) return "";
+        return `<ul class="bullets">${bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
+      }
+
+      function renderExperience() {
+        return experiences
+          .filter((item) => item.company || item.role || item.sub)
+          .map(
+            (item) => `
+    <div class="entry">
+      <div class="entry-row">
+        <div class="entry-main">
+          <span class="entry-title">${escapeHtml(item.company)}</span>${item.role ? `<span class="entry-pipe"> | </span><span class="entry-tech">${escapeHtml(item.role)}</span>` : ""}
+        </div>
+        <div class="entry-date">${escapeHtml(item.date)}</div>
+      </div>
+      ${item.sub ? `<div class="entry-sub">${escapeHtml(item.sub)}</div>` : ""}
+      ${renderBullets(item.bullets)}
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function renderProjects() {
+        return projects
+          .filter((item) => item.name || item.tech)
+          .map(
+            (item) => `
+    <div class="entry project">
+      <div class="entry-row">
+        <div class="entry-main">
+          <span class="entry-title">${escapeHtml(item.name)}</span>${item.link ? `<span class="entry-pipe"> | </span><span class="entry-link">${escapeHtml(item.link)}</span>` : ""}${item.tech ? `<span class="entry-pipe"> | </span><span class="entry-tech">${escapeHtml(item.tech)}</span>` : ""}
+        </div>
+        <div class="entry-date">${escapeHtml(item.date)}</div>
+      </div>
+      ${renderBullets(item.bullets)}
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function renderCertificates() {
+        const listItems = certificates
+          .filter((item) => item.name || item.org)
+          .map(
+            (item) => `
+    <li>
+      <div style="display: flex; justify-content: space-between;">
+        <div><span style="font-weight: normal; color: #000;">${escapeHtml(item.name)}</span>${item.org ? ` | <span>${escapeHtml(item.org)}</span>` : ""}</div>
+        <div>${escapeHtml(item.date)}</div>
+      </div>
+    </li>
+  `,
+          )
+          .join("");
+        return listItems
+          ? `<ul class="bullets" style="margin-top: 0 !important; margin-bottom: 0 !important;">${listItems}</ul>`
+          : "";
+      }
+
+      function renderSkills() {
+        const lines = [
+          ["Programming Languages:", value("skillProgLang")],
+          ["Technologies/Frameworks:", value("skillTech")],
+          ["Database:", value("skillDatabase")],
+          ["Version Control:", value("skillVersion")],
+          ["Soft Skills:", value("skillSoft")],
+        ].filter(([, content]) => content);
+
+        if (!lines.length) return "";
+        return `<div class="skills-list">${lines.map(([label, content]) => `<div class="skill-line"><strong>${escapeHtml(label)}</strong> ${escapeHtml(content)}</div>`).join("")}</div>`;
+      }
+
+      function renderEducation() {
+        return education
+          .filter((item) => item.school || item.degree)
+          .map(
+            (item) => `
+    <div class="entry">
+      <div class="entry-row">
+        <div class="entry-main"><span class="entry-title">${escapeHtml(item.school)}</span></div>
+        <div class="entry-date">${escapeHtml(item.place)}</div>
+      </div>
+      <div class="entry-subrow" style="display: flex; justify-content: space-between;">
+        <div class="entry-sub">${escapeHtml(item.degree)}${item.score ? ` - ${escapeHtml(item.score)}` : ""}</div>
+        <div class="entry-right-sub">${escapeHtml(item.date)}</div>
+      </div>
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      function updatePreview() {
+        const preview = document.getElementById("resumePreview");
+        if (preview)
+          preview.className = `resume-page template-${currentTemplate}`;
+
+        const firstName = value("firstName");
+        const lastName = value("lastName");
+        const fullName = `${firstName} ${lastName}`.trim() || "First Last";
+        const location = value("location");
+        const githubNote = value("githubNote");
+        const email = value("email");
+        const linkedin = value("linkedin");
+        const github = value("github");
+        const githubText = [github, githubNote ? `(${githubNote})` : ""]
+          .filter(Boolean)
+          .join(" ");
+
+        const contacts = [
+          value("phone")
+            ? `<span><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> ${escapeHtml(value("phone"))}</span>`
+            : "",
+          email
+            ? `<span><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></span>`
+            : "",
+          linkedin
+            ? `<span><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg> <a href="${escapeHtml(linkUrl(linkedin))}" target="_blank" rel="noopener">${escapeHtml(linkedin)}</a></span>`
+            : "",
+          githubText
+            ? `<span><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align: middle; margin-right: 4px; margin-bottom: 2px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> <a href="${escapeHtml(linkUrl(github))}" target="_blank" rel="noopener">${escapeHtml(githubText)}</a></span>`
+            : "",
+        ]
+          .filter(Boolean)
+          .join("");
+
+        const sectionsHtml = tabs
+          .filter((t) => t.id !== "personal")
+          .map((tab) => {
+            switch (tab.id) {
+              case "experience":
+                return renderSection("Internship", renderExperience());
+              case "projects":
+                return renderSection("Projects", renderProjects());
+              case "certificates":
+                return renderSection("Certificates", renderCertificates());
+              case "skills":
+                return renderSection("Skills", renderSkills());
+              case "education":
+                return renderSection("Education", renderEducation());
+              case "custom":
+                return customItems.length
+                  ? renderSection(
+                      customTitle || "Achievements",
+                      renderCustomItemsOutput(),
+                    )
+                  : "";
+              default:
+                return "";
+            }
+          })
+          .join("");
+
+        document.getElementById("resumePreview").innerHTML = `
+    ${renderPreviewHeader(fullName, location, contacts)}
+    ${sectionsHtml}
+  `;
+        saveResumeDraft();
+      }
+
+      function downloadPdf() {
+        // The phone preview is intentionally scaled for the screen.  Clear that
+        // state before printing so the generated file always uses the true A4 page.
+        closeMobilePreview();
+        window.setTimeout(() => window.print(), 120);
+      }
+
+      function downloadDoc() {
+        const page = document.getElementById("resumePreview");
+        if (!page) return;
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(page.innerHTML, "text/html");
+
+        // Helper to force inline styles for Word
+        const applyInline = (el, styles) => {
+          Object.keys(styles).forEach((k) => (el.style[k] = styles[k]));
+        };
+
+        // 1. Force Arial and reset MS Word default margins on block elements
+        const allElements = doc.querySelectorAll("*");
+        allElements.forEach((el) => {
+          el.style.fontFamily = "Arial, sans-serif";
+          el.style.color = "#000000";
+          if (
+            [
+              "P",
+              "H1",
+              "H2",
+              "H3",
+              "H4",
+              "H5",
+              "H6",
+              "UL",
+              "LI",
+              "DIV",
+              "SPAN",
+              "TD",
+            ].includes(el.tagName)
+          ) {
+            el.style.margin = "0";
+            el.style.padding = "0";
+            el.style.lineHeight = "1.1";
+          }
+        });
+
+        // 2. Fix Contacts (add separators)
+        const contactContainer = doc.querySelector(".resume-contact");
+        if (contactContainer) {
+          applyInline(contactContainer, {
+            textAlign: "center",
+            fontSize: "9pt",
+            marginBottom: "6pt",
+            color: "#444444",
+          });
+          const rootSpans = Array.from(contactContainer.childNodes).filter(
+            (n) => n.nodeName === "SPAN",
+          );
+          for (let i = 0; i < rootSpans.length; i++) {
+            if (i > 0) {
+              const sep = doc.createElement("span");
+              sep.innerHTML = "&nbsp;&nbsp;|&nbsp;&nbsp;";
+              contactContainer.insertBefore(sep, rootSpans[i]);
+            }
+            applyInline(rootSpans[i], { display: "inline", fontSize: "9pt" });
+          }
+        }
+
+        // 3. Fix Header alignment
+        const header = doc.querySelector(".resume-header");
+        if (header) {
+          applyInline(header, { textAlign: "center", marginBottom: "8pt" });
+          const name = header.querySelector(".resume-name");
+          if (name)
+            applyInline(name, {
+              fontSize: "18pt",
+              fontWeight: "bold",
+              margin: "0",
+              textAlign: "center",
+            });
+          const loc = header.querySelector(".resume-location");
+          if (loc)
+            applyInline(loc, {
+              fontSize: "10pt",
+              textAlign: "center",
+              marginTop: "2pt",
+            });
+        }
+
+        // 4. Fix Section Headings (add hr for reliable line)
+        const headings = doc.querySelectorAll(".section-title");
+        headings.forEach((h) => {
+          applyInline(h, {
+            fontSize: "11pt",
+            fontWeight: "bold",
+            margin: "2pt 0 1pt 0",
+            padding: "0",
+          });
+          // Ensure title case by not doing uppercase, but we can capitalize first letter if needed (not strictly necessary as original text is Title Case)
+          h.style.textTransform = "none";
+          const hr = doc.createElement("hr");
+          applyInline(hr, {
+            margin: "0 0 2pt 0",
+            padding: "0",
+            border: "0",
+            borderBottom: "1pt solid #000000",
+          });
+          h.parentNode.insertBefore(hr, h.nextSibling);
+        });
+
+        // 4b. Fix Icons
+        doc.querySelectorAll(".contact-icon").forEach((icon) => {
+          applyInline(icon, { fontWeight: "bold" });
+        });
+
+        // 5. Fix Entry Rows (Flex to Table)
+        doc.querySelectorAll(".entry-row").forEach((row) => {
+          const main = row.querySelector(".entry-main");
+          const date = row.querySelector(".entry-date");
+          if (main && date) {
+            const table = doc.createElement("table");
+            table.setAttribute("width", "100%");
+            table.setAttribute("border", "0");
+            table.setAttribute("cellpadding", "0");
+            table.setAttribute("cellspacing", "0");
+            applyInline(table, {
+              width: "100%",
+              margin: "0",
+              padding: "0",
+              borderCollapse: "collapse",
+            });
+
+            const tr = doc.createElement("tr");
+            const tdLeft = doc.createElement("td");
+            tdLeft.setAttribute("align", "left");
+            tdLeft.setAttribute("valign", "top");
+            tdLeft.innerHTML = main.innerHTML;
+            applyInline(tdLeft, {
+              fontFamily: "Arial, sans-serif",
+              margin: "0",
+              padding: "0",
+              fontSize: "9pt",
+            });
+
+            const tdRight = doc.createElement("td");
+            tdRight.setAttribute("align", "right");
+            tdRight.setAttribute("valign", "top");
+            tdRight.innerHTML = date.innerHTML;
+            applyInline(tdRight, {
+              fontFamily: "Arial, sans-serif",
+              fontSize: "9pt",
+              fontWeight: "bold",
+              whiteSpace: "nowrap",
+              textAlign: "right",
+              margin: "0",
+              padding: "0",
+            });
+
+            tr.appendChild(tdLeft);
+            tr.appendChild(tdRight);
+            table.appendChild(tr);
+            row.parentNode.replaceChild(table, row);
+          }
+        });
+
+        // 5b. Fix Entry Subrows (e.g. Education city names)
+        doc.querySelectorAll(".entry-subrow").forEach((row) => {
+          const main = row.querySelector(".entry-sub");
+          const right = row.querySelector(".entry-right-sub");
+          if (main && right) {
+            const table = doc.createElement("table");
+            table.setAttribute("width", "100%");
+            table.setAttribute("border", "0");
+            table.setAttribute("cellpadding", "0");
+            table.setAttribute("cellspacing", "0");
+            applyInline(table, {
+              width: "100%",
+              margin: "0",
+              padding: "0",
+              borderCollapse: "collapse",
+            });
+
+            const tr = doc.createElement("tr");
+            const tdLeft = doc.createElement("td");
+            tdLeft.setAttribute("align", "left");
+            tdLeft.setAttribute("valign", "top");
+            tdLeft.innerHTML = main.innerHTML;
+            applyInline(tdLeft, {
+              fontFamily: "Arial, sans-serif",
+              margin: "0",
+              padding: "0",
+              fontSize: "9pt",
+              fontStyle: "italic",
+              fontWeight: "normal",
+            });
+
+            const tdRight = doc.createElement("td");
+            tdRight.setAttribute("align", "right");
+            tdRight.setAttribute("valign", "top");
+            tdRight.innerHTML = right.innerHTML;
+            applyInline(tdRight, {
+              fontFamily: "Arial, sans-serif",
+              fontSize: "9pt",
+              fontStyle: "italic",
+              fontWeight: "normal",
+              whiteSpace: "nowrap",
+              textAlign: "right",
+              margin: "0",
+              padding: "0",
+            });
+
+            tr.appendChild(tdLeft);
+            tr.appendChild(tdRight);
+            table.appendChild(tr);
+            row.parentNode.replaceChild(table, row);
+          }
+        });
+
+        // 6. Fix specific entry elements
+        doc
+          .querySelectorAll(".entry")
+          .forEach((el) =>
+            applyInline(el, { margin: "0 0 3pt 0", padding: "0" }),
+          );
+        doc.querySelectorAll(".entry-title").forEach((el) =>
+          applyInline(el, {
+            fontWeight: "bold",
+            fontSize: "9pt",
+            margin: "0",
+            padding: "0",
+          }),
+        );
+        doc.querySelectorAll(".entry-tech").forEach((el) =>
+          applyInline(el, {
+            fontStyle: "italic",
+            fontSize: "9pt",
+            color: "#000000",
+            margin: "0",
+            padding: "0",
+          }),
+        );
+        doc.querySelectorAll(".entry-sub").forEach((el) =>
+          applyInline(el, {
+            fontStyle: "italic",
+            fontWeight: "normal",
+            fontSize: "9pt",
+            margin: "1pt 0 1pt 0",
+            padding: "0",
+            color: "#000000",
+          }),
+        );
+
+        // Replace ul/li with perfectly aligned tables to prevent Word's staircase indentation bug
+        doc.querySelectorAll("ul").forEach((ul) => {
+          const table = doc.createElement("table");
+          table.setAttribute("width", "100%");
+          table.setAttribute("border", "0");
+          table.setAttribute("cellpadding", "0");
+          table.setAttribute("cellspacing", "0");
+          applyInline(table, {
+            width: "100%",
+            margin: "0 0 2pt 12pt",
+            padding: "0",
+            borderCollapse: "collapse",
+          });
+
+          Array.from(ul.children).forEach((li) => {
+            const tr = doc.createElement("tr");
+
+            const tdBullet = doc.createElement("td");
+            tdBullet.setAttribute("align", "left");
+            tdBullet.setAttribute("valign", "top");
+            tdBullet.setAttribute("width", "14");
+            tdBullet.innerHTML = "&#8226;";
+            applyInline(tdBullet, {
+              width: "14pt",
+              fontFamily: "Arial, sans-serif",
+              fontSize: "9pt",
+              margin: "0",
+              padding: "0 0 1.5pt 0",
+              lineHeight: "1.2",
+            });
+
+            const tdText = doc.createElement("td");
+            tdText.setAttribute("align", "left");
+            tdText.setAttribute("valign", "top");
+            tdText.innerHTML = li.innerHTML;
+            applyInline(tdText, {
+              fontFamily: "Arial, sans-serif",
+              fontSize: "9pt",
+              margin: "0",
+              padding: "0 0 1.5pt 0",
+              lineHeight: "1.2",
+            });
+
+            tr.appendChild(tdBullet);
+            tr.appendChild(tdText);
+            table.appendChild(tr);
+          });
+
+          ul.parentNode.replaceChild(table, ul);
+        });
+
+        doc
+          .querySelectorAll("a")
+          .forEach((el) =>
+            applyInline(el, { textDecoration: "underline", color: "#000000" }),
+          );
+
+        const mso = `
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>100</w:Zoom>
+  <w:DoNotOptimizeForBrowser/>
+ </w:WordDocument>
+</xml><![endif]-->
+  `;
+
+        const html = `
+    <html xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+    <head>
+      <meta charset='utf-8'>
+      <title>Resume</title>
+      ${mso}
+      <style>
+        @page WordSection1 { size: 595.3pt 841.9pt; margin: 36.0pt 36.0pt 36.0pt 36.0pt; mso-header-margin: 0pt; mso-footer-margin: 0pt; }
+        div.WordSection1 { page: WordSection1; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        p { margin: 0; }
+      </style>
+    </head>
+    <body style="font-family: Arial, sans-serif; background: #ffffff; color: #000000; font-size: 9pt;">
+      <div class="WordSection1">
+        ${doc.body.innerHTML}
+      </div>
+    </body>
+    </html>`;
+
+        const blob = new Blob(["\ufeff", html], { type: "application/msword" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+
+        const firstName = document.getElementById("firstName")?.value || "My";
+        const lastName = document.getElementById("lastName")?.value || "Resume";
+        const title =
+          firstName || lastName ? `${firstName}_${lastName}_Resume` : "Resume";
+        link.download = `${title}.doc`;
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      function openPlayStore(event) {
+        const link = event.currentTarget;
+        if (!link || link.getAttribute("href") === "#") {
+          event.preventDefault();
+        }
+      }
+
+      function toggleMobileNav() {
+        const button = document.querySelector(".nav-toggle");
+        const nav = document.getElementById("siteNavMenu");
+        const overlay = document.getElementById("mobileNavOverlay");
+        const state = document.getElementById("mobileNavToggle");
+        if (!button || !nav) return;
+        const isOpen = state
+          ? state.checked
+          : button.getAttribute("aria-expanded") === "true";
+        if (state) state.checked = !isOpen;
+        button.setAttribute("aria-expanded", String(!isOpen));
+        nav.classList.toggle("open", !isOpen);
+        overlay?.classList.toggle("open", !isOpen);
+        overlay?.setAttribute("aria-hidden", String(isOpen));
+        document.body.classList.toggle("nav-open", !isOpen);
+      }
+
+      function closeMobileNav() {
+        const button = document.querySelector(".nav-toggle");
+        const nav = document.getElementById("siteNavMenu");
+        const state = document.getElementById("mobileNavToggle");
+        if (!button || !nav) return;
+        if (state) state.checked = false;
+        nav.classList.remove("open");
+        button.setAttribute("aria-expanded", "false");
+        const overlay = document.getElementById("mobileNavOverlay");
+        overlay?.classList.remove("open");
+        overlay?.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("nav-open");
+      }
+
+      function openMobilePreview() {
+        const preview = document.getElementById("resumePreviewPanel");
+        if (!preview) return;
+        if (window.matchMedia("(max-width: 760px)").matches) {
+          document.body.classList.add("mobile-preview-open");
+          fitMobilePreview();
+          preview.focus({ preventScroll: true });
+          return;
+        }
+        preview.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      function closeMobilePreview() {
+        document.body.classList.remove("mobile-preview-open");
+      }
+
+      function fitMobilePreview() {
+        const preview = document.getElementById("resumePreviewPanel");
+        const stage = preview?.querySelector(".mobile-preview-stage");
+        const page = document.getElementById("resumePreview");
+        if (
+          !preview ||
+          !stage ||
+          !page ||
+          !window.matchMedia("(max-width: 760px)").matches
+        )
+          return;
+        const pageWidth = page.offsetWidth;
+        const availableWidth = Math.max(1, preview.clientWidth - 24);
+        const scale = Math.min(1, availableWidth / pageWidth);
+        stage.style.setProperty("--mobile-preview-scale", String(scale));
+        stage.style.height = `${page.offsetHeight * scale}px`;
+      }
+
+      let currentResumeId =
+        new URLSearchParams(window.location.search).get("id") ||
+        "res_" +
+          Date.now().toString(36) +
+          Math.random().toString(36).substr(2, 5);
+
+      let isInitialLoad = true;
+
+      function saveResumeDraft() {
+        if (isInitialLoad) return;
+        const fields = {};
+        [
+          "firstName",
+          "lastName",
+          "location",
+          "phone",
+          "email",
+          "linkedin",
+          "github",
+          "githubNote",
+          "skillProgLang",
+          "skillTech",
+          "skillDatabase",
+          "skillVersion",
+          "skillSoft",
+          "customTitleInput",
+        ].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) fields[id] = el.value;
+        });
+
+        const title =
+          fields.firstName || fields.lastName
+            ? `${fields.firstName || ""} ${fields.lastName || ""}`.trim() +
+              "'s Resume"
+            : selectedTemplate().name;
+
+        const draft = {
+          id: currentResumeId,
+          title: title,
+          templateId: currentTemplate,
+          fields,
+          experiences,
+          projects,
+          certificates,
+          education,
+          customItems,
+          customTitle,
+          tabsOrder: tabs.map((t) => t.id),
+          lastSaved: Date.now(),
+        };
+
+        let savedResumes = [];
+        try {
+          savedResumes = JSON.parse(
+            localStorage.getItem("ats-saved-resumes") || "[]",
+          );
+        } catch {}
+        if (!Array.isArray(savedResumes)) savedResumes = [];
+
+        const existingIndex = savedResumes.findIndex(
+          (r) => r.id === currentResumeId,
+        );
+        if (existingIndex >= 0) {
+          savedResumes[existingIndex] = draft;
+        } else {
+          savedResumes.push(draft);
+        }
+
+        localStorage.setItem("ats-saved-resumes", JSON.stringify(savedResumes));
+        // Keep legacy key synced for fallback
+        localStorage.setItem("ats-resume-draft", JSON.stringify(draft));
+      }
+
+      function restoreResumeDraft() {
+        let draft;
+        let savedResumes = [];
+        try {
+          savedResumes = JSON.parse(
+            localStorage.getItem("ats-saved-resumes") || "[]",
+          );
+        } catch {}
+        if (!Array.isArray(savedResumes)) savedResumes = [];
+
+        const params = new URLSearchParams(window.location.search);
+        const idToLoad = params.get("id");
+
+        if (idToLoad) {
+          draft = savedResumes.find((r) => r.id === idToLoad);
+        }
+
+        // If not found in array, try legacy fallback
+        if (!draft) {
+          try {
+            draft = JSON.parse(
+              localStorage.getItem("ats-resume-draft") || "null",
+            );
+          } catch {}
+        }
+
+        if (!draft || !draft.fields) return;
+        if (draft.id) currentResumeId = draft.id;
+        if (draft.templateId && !params.get("template")) {
+          currentTemplate = draft.templateId;
+          updateBuilderTitle();
+        }
+
+        if (Array.isArray(draft.experiences)) experiences = draft.experiences;
+        if (Array.isArray(draft.projects)) projects = draft.projects;
+        if (Array.isArray(draft.certificates))
+          certificates = draft.certificates;
+        if (Array.isArray(draft.education)) education = draft.education;
+        if (Array.isArray(draft.customItems)) customItems = draft.customItems;
+        if (draft.customTitle) customTitle = draft.customTitle;
+
+        if (Array.isArray(draft.tabsOrder)) {
+          const newTabs = [];
+          draft.tabsOrder.forEach((id) => {
+            const tab = tabs.find((t) => t.id === id);
+            if (tab) newTabs.push(tab);
+          });
+          tabs.forEach((tab) => {
+            if (!newTabs.includes(tab)) newTabs.push(tab);
+          });
+          tabs.splice(0, tabs.length, ...newTabs);
+        }
+
+        Object.entries(draft.fields).forEach(([id, savedValue]) => {
+          const input = document.getElementById(id);
+          if (input) input.value = savedValue;
+        });
+      }
+
+      const defaultTemplate = "default";
+      const templateDefinitions = [
+        {
+          id: "default",
+          name: "Default Template",
+          badge: "ATS",
+          description: "Standard ATS format for professionals and freshers.",
+          previewVariant: "blue",
+        },
+        {
+          id: "iit-bombay",
+          name: "IIT Bombay",
+          badge: "IIT",
+          description:
+            "Template tuned for IIT Bombay graduates and technical applications.",
+          previewVariant: "dark",
+        },
+        {
+          id: "iit-kanpur",
+          name: "IIT Kanpur",
+          badge: "IIT",
+          description:
+            "Template tuned for IIT Kanpur graduates and technical applications.",
+          previewVariant: "dark",
+        },
+        {
+          id: "iiit-vadodara",
+          name: "IIIT Vadodara",
+          badge: "IIIT",
+          description:
+            "Template tuned for IIIT Vadodara graduates and technical applications.",
+          previewVariant: "dark",
+        },
+        {
+          id: "iit-ropar",
+          name: "IIT Ropar",
+          badge: "IIT",
+          description:
+            "Template tuned for IIT Ropar graduates and technical applications.",
+          previewVariant: "dark",
+        },
+        {
+          id: "modern",
+          name: "LPU B.Tech / MCA / BCA",
+          badge: "LPU",
+          description: "LPU official format for B.Tech, MCA, BCA students.",
+          previewVariant: "accent",
+        },
+        {
+          id: "lpu-mba",
+          name: "LPU MBA",
+          badge: "LPU",
+          description: "LPU MBA-specific resume layout.",
+          previewVariant: "accent",
+        },
+      ];
+      const availableTemplates = Object.fromEntries(
+        templateDefinitions.map((template) => [template.id, template]),
+      );
+      let currentTemplate = defaultTemplate;
+
+      function selectedTemplate() {
+        return (
+          availableTemplates[currentTemplate] ||
+          availableTemplates[defaultTemplate]
+        );
+      }
+
+      function resolveTemplateFromSearch() {
+        const params = new URLSearchParams(window.location.search);
+        const requested = String(params.get("template") || "").toLowerCase();
+        return availableTemplates[requested] ? requested : defaultTemplate;
+      }
+
+      function updateBuilderTitle() {
+        const title = document.querySelector(".editor-title");
+        const subtitle = document.querySelector(".editor-subtitle");
+        if (title)
+          title.textContent = `Resume Builder — ${selectedTemplate().name}`;
+        if (subtitle)
+          subtitle.textContent = `Selected template: ${selectedTemplate().name}`;
+      }
+
+      function renderPreviewHeader(fullName, location, contacts) {
+        // LPU Official General CV has a specific header layout:
+        // Name in blue, large serif font.
+        // Then a 2-column grid for contact info without SVGs.
+        const email = value("email");
+        const phone = value("phone");
+        const linkedin = value("linkedin");
+        const github = value("github");
+
+        return `
+    <header class="resume-header lpu-general-header" style="text-align: left; margin-bottom: 2px;">
+      <h1 class="resume-name" style="color: #1a237e; font-family: 'Times New Roman', Times, serif; font-size: 26pt; font-weight: bold; margin-bottom: 0px; margin-top: 0px; padding: 0; line-height: 1;">${escapeHtml(fullName)}</h1>
+      <div style="display: flex; justify-content: space-between; font-family: 'Times New Roman', Times, serif; font-size: 11pt; color: #000; line-height: 1.2;">
+        <div style="display: flex; flex-direction: column;">
+          ${linkedin ? `<div>LinkedIn: <a href="${escapeHtml(linkUrl(linkedin))}" style="color: #000; text-decoration: none;">${escapeHtml(linkedin.replace(/^https?:\/\/(www\.)?/, ''))}</a></div>` : ""}
+          ${github ? `<div>GitHub: <a href="${escapeHtml(linkUrl(github))}" style="color: #000; text-decoration: none;">${escapeHtml(github.replace(/^https?:\/\/(www\.)?/, ''))}</a></div>` : ""}
+        </div>
+        <div style="display: flex; flex-direction: column; text-align: right;">
+          ${email ? `<div>Email: <a href="mailto:${escapeHtml(email)}" style="color: #000; text-decoration: underline;">${escapeHtml(email)}</a></div>` : ""}
+          ${phone ? `<div>Mobile: ${escapeHtml(phone)}</div>` : ""}
+        </div>
+      </div>
+    </header>
+  `;
+      }
+
+      const blogArticles = [
+        ["Resume Tips", "How to Make an ATS-Friendly Resume", "7 min read"],
+        ["Freshers Guide", "Best Resume Format for Freshers", "6 min read"],
+        ["Resume Tips", "20 Resume Mistakes to Avoid", "8 min read"],
+        ["Career Advice", "Resume vs CV: What’s the Difference?", "5 min read"],
+        ["Resume Tips", "Best Skills for a Resume in 2026", "7 min read"],
+        ["Career Advice", "Software Engineer Resume Guide", "9 min read"],
+        [
+          "Career Advice",
+          "Java Developer Resume: Complete Guide",
+          "8 min read",
+        ],
+        ["Career Advice", "Python Developer Resume Examples", "8 min read"],
+        ["Career Advice", "Frontend Developer Resume Guide", "7 min read"],
+        ["Career Advice", "Data Analyst Resume Guide", "9 min read"],
+        ["Interview Tips", "HR Interview Questions and Answers", "10 min read"],
+        [
+          "ATS Tips",
+          "Top Resume Keywords That Recruiters Notice",
+          "6 min read",
+        ],
+        [
+          "LinkedIn Guide",
+          "LinkedIn Profile Tips for Job Seekers",
+          "7 min read",
+        ],
+        ["Placement Tips", "How to Write an Internship Resume", "6 min read"],
+        ["Career Advice", "Cover Letter Guide with Examples", "8 min read"],
+        ["Resume Tips", "Resume Summary Examples That Work", "7 min read"],
+        ["ATS Tips", "Best Resume Fonts for Readability", "5 min read"],
+        ["ATS Tips", "How an ATS Resume Checker Works", "6 min read"],
+        ["Freshers Guide", "Resume Guide for MCA Students", "7 min read"],
+        ["Placement Tips", "Resume Tips for Campus Placements", "8 min read"],
+      ];
+      function miniResume(variant = "") {
+        return `<div class="template-resume ${variant}"><div class="mini-name">Aarav Sharma</div><div class="mini-contact">Product Designer · New Delhi</div><div class="mini-rule"></div><div class="mini-heading">Experience</div><div class="mini-job">Product Designer <span class="mini-date">2024 — now</span></div><div class="mini-copy">Created thoughtful digital experiences and systems.</div><div class="mini-heading">Education</div><div class="mini-copy">Bachelor of Design · 2020 — 2024</div><div class="mini-heading">Skills</div><div class="mini-copy">Research · Figma · Prototyping</div></div>`;
+      }
+      function renderTemplates() {
+        const cards = templateDefinitions
+          .map((template) => {
+            const isLpu = template.id === "modern" || template.id === "lpu-mba";
+            return `
+      <article class="template-card">
+        <div class="template-preview ${template.previewVariant}">
+          <img class="modern-template-image" src="${isLpu ? "assets/lpu-resume-template.png" : "assets/modern-resume-template-640.webp"}" 
+alt="${escapeHtml(template.name)} resume template preview" loading="lazy" 
+decoding="async" fetchpriority="low">
+        </div>
+        <div class="template-body">
+          <div>
+            <p class="template-label">${escapeHtml(template.badge)}</p>
+            <h3>${escapeHtml(template.name)}</h3>
+            <p class="template-copy">${escapeHtml(template.description)}</p>
+          </div>
+          <div class="template-actions">
+            <a class="template-action ${!isLpu ? "opacity-50 pointer-events-none" : ""}" href="${isLpu ? `builder/?template=${template.id}` : "#"}">Preview</a>
+            <a class="template-action primary ${!isLpu ? "opacity-50 pointer-events-none bg-gray-500 border-gray-500" : ""}" style="${!isLpu ? "background: #9ca3af; border-color: #9ca3af;" : ""}" href="${isLpu ? `builder/?template=${template.id}` : "#"}">${isLpu ? "Use Template" : "Coming Soon"}</a>
+          </div>
+        </div>
+      </article>
+    `;
+          })
+          .join("");
+        document.getElementById("templateGrid").innerHTML = cards;
+      }
+
+      function blogSlug(title) {
+        const slugs = {
+          "How to Make an ATS-Friendly Resume": "ats-resume-guide",
+          "Best Resume Format for Freshers": "resume-format-for-freshers",
+          "Resume vs CV: What’s the Difference?": "resume-vs-cv",
+          "How an ATS Resume Checker Works": "how-to-improve-ats-score",
+          "Software Engineer Resume Guide": "software-engineer-resume-guide",
+        };
+        return (
+          slugs[title] ||
+          title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)/g, "")
+        );
+      }
+      function getBlogImage(title) {
+        const blogImages = {
+          "How to Make an ATS-Friendly Resume":
+            "assets/ats-resume-guide-cover.png",
+          "Best Resume Format for Freshers":
+            "assets/resume-format-for-freshers.png",
+          "20 Resume Mistakes to Avoid": "assets/resume-mistakes-to-avoid.png",
+          "Resume vs CV: What's the Difference?": "assets/resume-vs-cv.png",
+          "Best Skills for a Resume in 2026":
+            "assets/best-skills-for-a-resume-in-2026.png",
+          "Software Engineer Resume Guide":
+            "assets/software-engineer-resume-guide.png",
+          "Java Developer Resume: Complete Guide":
+            "assets/java-developer-resume-complete-guide.png",
+          "Python Developer Resume Examples":
+            "assets/python-developer-resume-examples.png",
+          "Frontend Developer Resume Guide":
+            "assets/modern-resume-template.png",
+          "Data Analyst Resume Guide":
+            "assets/best-skills-for-a-resume-in-2026.png",
+          "HR Interview Questions and Answers":
+            "assets/ats-resume-guide-cover.png",
+          "Top Resume Keywords That Recruiters Notice":
+            "assets/how-to-improve-ats-score.png",
+          "LinkedIn Profile Tips for Job Seekers":
+            "assets/resume-format-for-freshers.png",
+          "How to Write an Internship Resume":
+            "assets/resume-format-for-freshers.png",
+          "Cover Letter Guide with Examples": "assets/resume-vs-cv.png",
+          "Resume Summary Examples That Work":
+            "assets/ats-resume-guide-cover.png",
+          "Best Resume Fonts for Readability":
+            "assets/software-engineer-resume-guide.png",
+          "How an ATS Resume Checker Works":
+            "assets/how-to-improve-ats-score.png",
+          "Resume Guide for MCA Students":
+            "assets/resume-format-for-freshers.png",
+          "Resume Tips for Campus Placements":
+            "assets/best-skills-for-a-resume-in-2026.png",
+        };
+        return blogImages[title] || "assets/ats-resume-guide-cover.png";
+      }
+      function renderBlogs() {
+        document.getElementById("blogGrid").innerHTML = blogArticles
+          .map(([category, title, time]) => {
+            const image = getBlogImage(title);
+            const webp = image.replace(".png", "-640.webp"),
+              webp2 = image.replace(".png", "-960.webp");
+            return `<article class="blog-card"><div class="blog-thumb"><img src="${webp}" srcset="${webp} 640w, ${webp2} 960w" sizes="(max-width: 980px) calc(100vw - 32px), (max-width: 1400px) 33vw, 420px" alt="${title} featured image" loading="lazy" decoding="async" fetchpriority="low"></div><div class="blog-content"><div class="blog-meta">${category} · ${time}</div><h3>${title}</h3><p>Clear, practical guidance to help you create a stronger application and move forward with confidence.</p><div class="blog-byline">By ATS Resume Builder · Jul 2026</div><a class="link-arrow" href="blog/${blogSlug(title)}/">Read guide →</a></div></article>`;
+          })
+          .join("");
+      }
+      function openComingSoon() {
+        document.getElementById("comingSoonModal").classList.add("open");
+      }
+      function closeComingSoon() {
+        document.getElementById("comingSoonModal").classList.remove("open");
+      }
+      function setCookiePreference(value) {
+        localStorage.setItem("ats-cookie-preference", value);
+        document.getElementById("cookieBanner").hidden = true;
+      }
+      function loadAnalytics() {
+        if (document.getElementById("ga-loader")) return;
+        const script = document.createElement("script");
+        script.id = "ga-loader";
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-297YE2PQXD";
+        script.async = true;
+        script.onload = () => {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag =
+            window.gtag ||
+            function () {
+              window.dataLayer.push(arguments);
+            };
+          window.gtag("js", new Date());
+          window.gtag("config", "G-297YE2PQXD");
+        };
+        document.head.appendChild(script);
+      }
+      function deferAnalytics() {
+        const schedule = () =>
+          window.requestIdleCallback
+            ? window.requestIdleCallback(loadAnalytics, { timeout: 5000 })
+            : window.setTimeout(loadAnalytics, 3500);
+        if (document.readyState === "complete") schedule();
+        else window.addEventListener("load", schedule, { once: true });
+      }
+      function initPremiumMotion() {
+        const header = document.querySelector(".site-header");
+        const navLinks = [
+          ...document.querySelectorAll(".site-nav a[href^='#']"),
+        ];
+        const updateHeader = () =>
+          header.classList.toggle("scrolled", window.scrollY > 16);
+        window.addEventListener("scroll", updateHeader, { passive: true });
+        updateHeader();
+        const sections = navLinks
+          .map((link) => document.querySelector(link.getAttribute("href")))
+          .filter(Boolean);
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries) =>
+              entries.forEach((entry) => {
+                if (entry.isIntersecting)
+                  navLinks.forEach((link) =>
+                    link.classList.toggle(
+                      "active",
+                      link.getAttribute("href") === "#" + entry.target.id,
+                    ),
+                  );
+              }),
+            { rootMargin: "-35% 0px -60% 0px" },
+          );
+          sections.forEach((section) => observer.observe(section));
+        }
+
+        document.querySelectorAll(".site-nav a").forEach((link) => {
+          link.addEventListener("click", closeMobileNav);
+        });
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeMobileNav();
+        });
+      }
+
+      function initMobileNavigation() {
+        const button = document.querySelector(".nav-toggle");
+        const overlay = document.getElementById("mobileNavOverlay");
+        if (button?.tagName === "BUTTON")
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            toggleMobileNav();
+          });
+        overlay?.addEventListener("click", closeMobileNav);
+        window.addEventListener(
+          "resize",
+          () => {
+            if (!window.matchMedia("(max-width: 1024px)").matches)
+              closeMobileNav();
+            fitMobilePreview();
+          },
+          { passive: true },
+        );
+        window.addEventListener("orientationchange", fitMobilePreview, {
+          passive: true,
+        });
+        if ("ResizeObserver" in window) {
+          const preview = document.getElementById("resumePreviewPanel");
+          if (preview) new ResizeObserver(fitMobilePreview).observe(preview);
+        }
+      }
+
+      function init() {
+        currentTemplate = resolveTemplateFromSearch();
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("builder"))
+          document.body.classList.add("builder-page-mode");
+        if (params.has("edit") || params.has("print")) {
+          restoreResumeDraft();
+        }
+        renderTemplates();
+        renderBlogs();
+        initPremiumMotion();
+        deferAnalytics();
+        if (localStorage.getItem("ats-cookie-preference"))
+          document.getElementById("cookieBanner").hidden = true;
+        updateBuilderTitle();
+        renderTabs();
+        renderExperienceEditor();
+        renderProjectEditor();
+        renderCertEditor();
+        renderEduEditor();
+        renderCustomEditor();
+        updateNav();
+        updatePreview();
+
+        if (new URLSearchParams(window.location.search).has("print")) {
+          setTimeout(() => {
+            window.print();
+            window.location.href = "/";
+          }, 1000);
+        }
+
+        // Allow saving only after initial render is complete
+        setTimeout(() => {
+          isInitialLoad = false;
+        }, 500);
+      }
+
+      // Bind this before the rest of the page initializes so the mobile menu remains
+      // available even if a non-navigation widget fails while rendering.
+      initMobileNavigation();
+      init();
+    </script>
+  </body>
+</html>

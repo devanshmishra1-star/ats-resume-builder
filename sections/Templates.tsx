@@ -22,14 +22,22 @@ export async function Templates() {
   };
 
   const getTemplateLink = (slug: string) => {
-    if (slug === 'LPU Official ') return '/builder/?template=modern';
-    if (slug === 'LPU MBA ' || slug === 'LPU MBA' || slug === 'lpu-mba') return '/builder/?template=lpu-mba';
-    if (slug === 'LPU-Official ' || slug.toLowerCase().includes('general')) return '/builder/?template=lpu-general';
+    const s = slug.toLowerCase().trim();
+    if (s === 'lpu official' || slug === 'LPU Official ') return '/builder/?template=modern';
+    if (s === 'lpu mba' || slug === 'LPU MBA ' || slug === 'lpu-mba') return '/builder/?template=lpu-mba';
+    if (s.includes('general') || slug === 'LPU-Official ') return '/builder/?template=lpu-general';
+    if (s.includes('ropar')) return '/builder/?template=iit-ropar';
     return '#';
   };
 
   const isTemplateReady = (slug: string) => {
-    return slug === 'LPU Official ' || slug === 'LPU MBA ' || slug === 'LPU MBA' || slug === 'lpu-mba' || slug === 'LPU-Official ' || slug.toLowerCase().includes('general');
+    const s = slug.toLowerCase().trim();
+    return (
+      slug === 'LPU Official ' || 
+      s === 'lpu mba' || slug === 'LPU MBA ' || slug === 'lpu-mba' || 
+      slug === 'LPU-Official ' || s.includes('general') ||
+      s.includes('ropar')
+    );
   };
 
   return (

@@ -3127,10 +3127,24 @@ function miniResume(variant = "") { return `<div class="template-resume ${varian
 function renderTemplates() {
   const cards = templateDefinitions.map((template) => {
     const isLpu = template.id === 'modern' || template.id === 'lpu-mba';
+    const isIitRopar = template.id === 'iit-ropar';
+    const isEnabled = isLpu || isIitRopar;
+    
+    let linkHref = '#';
+    let imgSrc = 'assets/modern-resume-template-640.webp';
+
+    if (isLpu) {
+      linkHref = `builder/?template=${template.id}`;
+      imgSrc = 'assets/lpu-resume-template.png';
+    }
+    if (isIitRopar) {
+      linkHref = `iit-ropar.html?template=modern&builder=true`;
+    }
+
     return `
       <article class="template-card">
         <div class="template-preview ${template.previewVariant}">
-          <img class="modern-template-image" src="${isLpu ? 'assets/lpu-resume-template.png' : 'assets/modern-resume-template-640.webp'}" 
+          <img class="modern-template-image" src="${imgSrc}" 
 alt="${escapeHtml(template.name)} resume template preview" loading="lazy" 
 decoding="async" fetchpriority="low">
         </div>
@@ -3141,8 +3155,8 @@ decoding="async" fetchpriority="low">
             <p class="template-copy">${escapeHtml(template.description)}</p>
           </div>
           <div class="template-actions">
-            <a class="template-action ${!isLpu ? 'opacity-50 pointer-events-none' : ''}" href="${isLpu ? `builder/?template=${template.id}` : '#'}">Preview</a>
-            <a class="template-action primary ${!isLpu ? 'opacity-50 pointer-events-none bg-gray-500 border-gray-500' : ''}" style="${!isLpu ? 'background: #9ca3af; border-color: #9ca3af;' : ''}" href="${isLpu ? `builder/?template=${template.id}` : '#'}">${isLpu ? 'Use Template' : 'Coming Soon'}</a>
+            <a class="template-action ${!isEnabled ? 'opacity-50 pointer-events-none' : ''}" href="${linkHref}">Preview</a>
+            <a class="template-action primary ${!isEnabled ? 'opacity-50 pointer-events-none bg-gray-500 border-gray-500' : ''}" style="${!isEnabled ? 'background: #9ca3af; border-color: #9ca3af;' : ''}" href="${linkHref}">${isEnabled ? 'Use Template' : 'Coming Soon'}</a>
           </div>
         </div>
       </article>
