@@ -25,8 +25,8 @@ export async function Templates() {
     const s = slug.toLowerCase().trim();
     if (s === 'lpu official' || slug === 'LPU Official ') return '/builder/?template=modern';
     if (s === 'lpu mba' || slug === 'LPU MBA ' || slug === 'lpu-mba') return '/builder/?template=lpu-mba';
+    if (s.includes('ropar') || s.includes('b.tech') || s.includes('btech')) return '/builder/?template=iit-ropar';
     if (s.includes('general') || slug === 'LPU-Official ') return '/builder/?template=lpu-general';
-    if (s.includes('ropar')) return '/builder/?template=iit-ropar';
     return '#';
   };
 
@@ -36,7 +36,7 @@ export async function Templates() {
       slug === 'LPU Official ' || 
       s === 'lpu mba' || slug === 'LPU MBA ' || slug === 'lpu-mba' || 
       slug === 'LPU-Official ' || s.includes('general') ||
-      s.includes('ropar')
+      s.includes('ropar') || s.includes('b.tech') || s.includes('btech')
     );
   };
 
